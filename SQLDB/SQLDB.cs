@@ -9,14 +9,12 @@ namespace SQLDB
     using System;
     using System.Collections.Generic;
     using System.Configuration;
-    using System.Data;s
+    using System.Data;
     using System.Data.SqlClient;
     using System.IO;
     using System.Linq;
     using System.Text;
-
-    namespace SQLDB
-    {
+   
         public static class SQLDB
         {
 
@@ -90,5 +88,5 @@ namespace SQLDB
                 }
             }
         }
-    }
+    
 }

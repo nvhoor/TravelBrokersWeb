@@ -106,7 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="GUI\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -116,12 +116,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="GUI\HomeMasterPage.Master" />
+    <Content Include="GUI\AdminMasterPage.Master" />
+    <Content Include="GUI\DefaultMasterPage.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="GUI\HomeWebForm.aspx" />
+    <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
+    <Content Include="GUI\ThongTinTourWebForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\prefixfree.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
@@ -148,6 +155,8 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="StyleSheets\reset.min.css" />
+    <Content Include="StyleSheets\style.css" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -161,10 +170,52 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\AdminMasterPage.Master.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminMasterPage.Master.designer.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DefaultMasterPage.Master.cs">
+      <DependentUpon>DefaultMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DefaultMasterPage.Master.designer.cs">
+      <DependentUpon>DefaultMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeMasterPage.Master.cs">
+      <DependentUpon>HomeMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeMasterPage.Master.designer.cs">
+      <DependentUpon>HomeMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeWebForm.aspx.cs">
+      <DependentUpon>HomeWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeWebForm.aspx.designer.cs">
+      <DependentUpon>HomeWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.cs">
+      <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.designer.cs">
+      <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThongTinTourWebForm.aspx.cs">
+      <DependentUpon>ThongTinTourWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ThongTinTourWebForm.aspx.designer.cs">
+      <DependentUpon>ThongTinTourWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
