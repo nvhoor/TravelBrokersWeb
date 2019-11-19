@@ -9,7 +9,7 @@ namespace SQLDB
     using System;
     using System.Collections.Generic;
     using System.Configuration;
-    using System.Data;
+    using System.Data;s
     using System.Data.SqlClient;
     using System.IO;
     using System.Linq;
@@ -29,7 +29,7 @@ namespace SQLDB
                 }
 
                 set
-                {ss
+                {
                     connectionString = value;
                 }
             }
