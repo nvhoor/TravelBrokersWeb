@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="QuanLyTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.QuanLyTourWebForm" %>
 <%@ Register Src="~/GUI/DanhSachSPWebUserControl.ascx" TagPrefix="uc1" TagName="DanhSachSPWebUserControl" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Content 01 -->

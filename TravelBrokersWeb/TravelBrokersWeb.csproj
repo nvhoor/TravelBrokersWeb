@@ -106,7 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -126,6 +125,24 @@
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\beach-icon.png" />
+    <Content Include="images\facebook-logo.png" />
+    <Content Include="images\find-beach-icon.png" />
+    <Content Include="images\flight.jpg" />
+    <Content Include="images\flight2.png" />
+    <Content Include="images\instagram-logo.png" />
+    <Content Include="images\island.png" />
+    <Content Include="images\proposal-flight.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\slide-1.jpg" />
+    <Content Include="images\slide-2.jpg" />
+    <Content Include="images\slide-3.jpg" />
+    <Content Include="images\slide-4.jpg" />
+    <Content Include="images\slide-4.png" />
+    <Content Include="images\star.png" />
+    <Content Include="images\twitter-logo.png" />
+    <Content Include="images\youtube-logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

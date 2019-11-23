@@ -1,0 +1,6 @@
+diff a/TravelBrokersWeb/GUI/ThongTinTourWebForm.aspx b/TravelBrokersWeb/GUI/ThongTinTourWebForm.aspx	(rejected hunks)
+@@ -4,3 +5,4 @@
++<<<<<<< HEAD
+ ﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="ThongTinTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.ThongTinTourWebForm" %>
+ =======
+ ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="ThongTinTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.ThongTinTourWebForm" %>
