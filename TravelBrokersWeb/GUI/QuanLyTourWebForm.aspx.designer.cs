@@ -10,7 +10,7 @@
 namespace TravelBrokersWeb.GUI {
     
     
-    public partial class ThongTinTourWebForm {
+    public partial class QuanLyTourWebForm {
         
         /// <summary>
         /// txtTimKiem control.

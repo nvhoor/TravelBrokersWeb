@@ -1,4 +1,4 @@
-
+﻿
 body {
 	border-top: 5px solid #e56038;
 	background: white;
@@ -484,4 +484,122 @@ hr.dashed {
 	position: absolute;
 	top:10px;
 	left: 10px;
+}
+/*Le Van Phuc*/
+/*Css Quản Lý Tour*/
+.btn-tong{
+  margin-left: 200px;
+  margin-top: 40px;
+}
+hr {
+    background: #e56038;
+    margin: 0;
+    padding: 2.5px;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+    margin-right: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.tb-sp-sm {
+    max-height: 500px;
+}
+.tb-sp-sl {
+    width: 98%;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.tb-sp-s2{
+    overflow: scroll;
+}
+/*.overflow-auto {
+    overflow: auto!important;
+}*/
+.
+.btn-tong{
+    border: dashed 2px red;
+}
+.carousel-inner img {
+      width: 200px;
+      height: 200px;
+  }
+.img-thumbnail{
+    width: 380px;
+    height: 210px;
+}
+label{
+    font-weight: bold;
+}
+body {  
+padding-top:0px;
+}
+h1 {
+color:#F90
+}
+p {
+color:#0C0
+}
+
+
+.slider-container{
+  height: 300px;
+  width: 410px;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+  border-radius: 2px;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  transition: all .3s ease;
+  &:hover {
+    background: red;
+  }
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("4.png");
+}
+.slide-2 {
+  background-image: url("https://source.unsplash.com/11H1SSVcIxc/1600x900");
+}
+.slide-3 {
+  background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
 }
