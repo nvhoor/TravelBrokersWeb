@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="ThongTinTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.ThongTinTourWebForm" %>
+=======
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="ThongTinTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.ThongTinTourWebForm" %>
 
 <%@ Register Src="~/GUI/DanhSachSPWebUserControl.ascx" TagPrefix="uc1" TagName="DanhSachSPWebUserControl" %>
 
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
