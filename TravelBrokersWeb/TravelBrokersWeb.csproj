@@ -124,6 +124,7 @@
     <Content Include="GUI\HomeUser.aspx" />
     <Content Include="GUI\HomeWebForm.aspx" />
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
+    <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -225,6 +226,13 @@
     </Compile>
     <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.designer.cs">
       <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyTourWebForm.aspx.cs">
+      <DependentUpon>QuanLyTourWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyTourWebForm.aspx.designer.cs">
+      <DependentUpon>QuanLyTourWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\ThongTinTourWebForm.aspx.cs">
       <DependentUpon>ThongTinTourWebForm.aspx</DependentUpon>
