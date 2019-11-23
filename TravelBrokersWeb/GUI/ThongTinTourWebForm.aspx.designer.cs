@@ -13,120 +13,209 @@ namespace TravelBrokersWeb.GUI {
     public partial class ThongTinTourWebForm {
         
         /// <summary>
+<<<<<<< HEAD
         /// txtTimKiem control.
+=======
+        /// lblName control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox txtTimKiem;
         
         /// <summary>
         /// btnTimKiem control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblName;
+        
+        /// <summary>
+        /// lblCode control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Button btnTimKiem;
         
         /// <summary>
         /// drnhacungcap control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblCode;
+        
+        /// <summary>
+        /// lblVoteRate control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.DropDownList drnhacungcap;
         
         /// <summary>
         /// txtMaDM control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblVoteRate;
+        
+        /// <summary>
+        /// lblNumVote control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox txtMaDM;
         
         /// <summary>
         /// drDMtour control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblNumVote;
+        
+        /// <summary>
+        /// lblView control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.DropDownList drDMtour;
         
         /// <summary>
         /// txtTenTour control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblView;
+        
+        /// <summary>
+        /// lblDepartureDate control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox txtTenTour;
         
         /// <summary>
         /// hdImage control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblDepartureDate;
+        
+        /// <summary>
+        /// lblNumDay control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.HiddenField hdImage;
         
         /// <summary>
         /// blah control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblNumDay;
+        
+        /// <summary>
+        /// lblDeparturePlace control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Image blah;
         
         /// <summary>
         /// flImage control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblDeparturePlace;
+        
+        /// <summary>
+        /// lblPromotionPrice control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.FileUpload flImage;
         
         /// <summary>
         /// CheckBox1 control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblPromotionPrice;
+        
+        /// <summary>
+        /// lblSlot control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
         
         /// <summary>
         /// CheckBox2 control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblSlot;
+        
+        /// <summary>
+        /// lblDescription control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
         
         /// <summary>
         /// txtluotxem control.
+=======
+        protected global::System.Web.UI.WebControls.Label lblDescription;
+        
+        /// <summary>
+        /// rpTourProg control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox txtluotxem;
         
         /// <summary>
         /// drNoikhoihanh control.
+=======
+        protected global::System.Web.UI.WebControls.Repeater rpTourProg;
+        
+        /// <summary>
+        /// DanhSachSPWebUserControl3 control.
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.DropDownList drNoikhoihanh;
         
         /// <summary>
@@ -227,5 +316,8 @@ namespace TravelBrokersWeb.GUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drsothutu;
+=======
+        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl DanhSachSPWebUserControl3;
+>>>>>>> 7c537dad35b320ec9a29c07d3ad304c3f14be025
     }
 }

@@ -116,10 +116,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="GUI\DanhSachSPWebUserControl.ascx" />
     <Content Include="GUI\HomeMasterPage.Master" />
     <Content Include="GUI\AdminMasterPage.Master" />
     <Content Include="GUI\DefaultMasterPage.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="GUI\HomeUser.aspx" />
     <Content Include="GUI\HomeWebForm.aspx" />
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
@@ -183,6 +185,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DanhSachSPWebUserControl.ascx.cs">
+      <DependentUpon>DanhSachSPWebUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhSachSPWebUserControl.ascx.designer.cs">
+      <DependentUpon>DanhSachSPWebUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DefaultMasterPage.Master.cs">
       <DependentUpon>DefaultMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +205,13 @@
     </Compile>
     <Compile Include="GUI\HomeMasterPage.Master.designer.cs">
       <DependentUpon>HomeMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeUser.aspx.cs">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeUser.aspx.designer.cs">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\HomeWebForm.aspx.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>

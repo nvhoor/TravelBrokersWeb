@@ -10,33 +10,24 @@
 namespace TravelBrokersWeb.GUI {
     
     
-    public partial class HomeMasterPage {
+    public partial class HomeUser {
         
         /// <summary>
-        /// rpDSDM1 control.
+        /// DanhSachSPWebUserControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rpDSDM1;
+        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl DanhSachSPWebUserControl;
         
         /// <summary>
-        /// Repeater1 control.
+        /// DanhSachSPWebUserControl1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
-        
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl DanhSachSPWebUserControl1;
     }
 }
