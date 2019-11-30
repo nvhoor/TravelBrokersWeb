@@ -18,7 +18,7 @@ namespace SQLDB
         public static class SQLDB
         {
 
-            private static string connectionString = "";
+            private static string connectionString = "Data Source=LAPTOP-8RUOB0LS;Initial Catalog=TravelBrokers;User ID=sa;Password=123";
             public static string ConnectionString
             {
                 get
