@@ -125,7 +125,11 @@
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
+<<<<<<< HEAD
     <Content Include="GUI\DatTourWebForm.aspx" />
+=======
+    <Content Include="GUI\Login.aspx" />
+>>>>>>> 8cf75d53ac06be61ec3f1c2786f238274d679bce
     <Content Include="images\background.jpg" />
     <Content Include="images\beach-icon.png" />
     <Content Include="images\facebook-logo.png" />
@@ -260,12 +264,21 @@
     <Compile Include="GUI\ThongTinTourWebForm.aspx.designer.cs">
       <DependentUpon>ThongTinTourWebForm.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="GUI\DatTourWebForm.aspx.cs">
       <DependentUpon>DatTourWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GUI\DatTourWebForm.aspx.designer.cs">
       <DependentUpon>DatTourWebForm.aspx</DependentUpon>
+=======
+    <Compile Include="GUI\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+>>>>>>> 8cf75d53ac06be61ec3f1c2786f238274d679bce
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
