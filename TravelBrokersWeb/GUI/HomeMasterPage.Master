@@ -75,20 +75,62 @@
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-find-tour">
         <div class="container-fluid">
             <div id="find-tour" class="row">
-                <div class="col-lg-4" id="search-tour">
-                    <div class="card">
-                        <img class="card-img-top" src="../images/find-beach-icon.png" alt="Card image">
-                        <p class="card-title">--------</p>   
-                          <p class="card-title text-find-tour font-weight-bold">TÌM TOUR</p>  
+                <div class="dropdown find-dropdown">
+                    <div class="col-lg-5 dropdown-toggle" id="search-tour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="card">
+                            <img class="card-img-top" src="images/find-beach-icon.png" alt="Card image">
+                           
+                            <p class="card-title text-find-tour font-weight-bold">TÌM TOUR</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4" id="proposal-tour">
-                      <div class="card">
-                          <img class="card-img-top" src="../images/proposal-flight.png" alt="Card image">
-                          <p class="card-title">--------</p>   
-                            <p class="card-title text-proposal-tour font-weight-bold">ĐỀ XUẤT TOUR</p>  
-                      </div>
+                    <div class="dropdown-menu form-search " aria-labelledby="search-tour">
+                        <div class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail2">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                    Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
                     </div>
+                </div>
+                <div class="dropdown find-dropdown-r">
+                    <div class="col-lg-5 dropdown-toggle" id="proposal-tour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="card">
+                            <img class="card-img-top" src="images/proposal-flight.png" alt="Card image">
+                            
+                            <p class="card-title text-proposal-tour font-weight-bold">ĐỀ XUẤT TOUR</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu form-proposal" aria-labelledby="search-tour">
+                        <div class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address 2</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password 2</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    Remember me 2
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in 2</button>
+                        </div>
+                    </div>
+                </div>
             </div> 
         </div>
         <!-- <div id="form-find" class="container-fluid">
