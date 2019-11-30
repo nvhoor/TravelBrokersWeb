@@ -405,9 +405,34 @@ table.tb-giohang a:hover{
 }
 #find-tour{
 	position: absolute;
-	top:-300%;
-	width: 700px;
-	left:38.5%;
+	top:-250%;
+	width: 100%;
+	left:0px;
+}
+.find-dropdown{
+    position:relative;
+    left:37%;
+    bottom:0px;
+    width:30%;
+}
+.find-dropdown-r{
+    position:relative;
+    left:37%;
+    bottom:0px;
+    width:30%;
+    margin-left:-15%;
+}
+.form-search{
+    position:absolute;
+    left:-115%;
+    top:100%;
+    width:323%;
+}
+.form-proposal{
+     position:absolute;
+    left:-165%;
+    top:100%;
+    width:323%;
 }
 #search-tour .card:hover{
 	border: 2px solid rgba(0, 61, 132, 1);
@@ -423,13 +448,7 @@ table.tb-giohang a:hover{
 #proposal-tour .card:hover{
 	border: 2px solid rgba(253, 134, 8, 1);
 }
-#form-find{
-	height: 100px;
-	position: relative;
-	background-color: #EBE8DE;
-	z-index: 99;
-	top:70px;
-}
+
 .slide-banner img{
 	height:600px;
 }
@@ -476,7 +495,7 @@ table.tb-giohang a:hover{
 hr.dashed {
 	border-top: 1px dashed #8c8b8b;
 	background:white;
-	margin: 1;
+	margin: 1px;
 	padding: 1px;
 }
 .circle-tour{
