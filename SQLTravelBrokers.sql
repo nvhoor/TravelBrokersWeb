@@ -5,14 +5,14 @@ insert into Accounts values('phuc','1234',null,'utthaonguyenthi98@gmail.com','09
 insert into Accounts values('nhi','12345',null,'utthaonguyenthi98@gmail.com','0901321202','RO03',0);
 insert into Accounts values('ho','123456',null,'utthaonguyenthi98@gmail.com','0901321202','RO01',0);
 insert into Accounts values('quang','1233',null,'utthaonguyenthi98@gmail.com','0901321202','RO03',0);
---Evaluations
---PostCategories
---Post
---Price
---Provinces
---TourBookings
---TourCategories
---TourCustomers
+--Evaluations - utthao
+--PostCategories - phuc
+--Post - phuc
+--Price - utthao
+--Provinces -nhi
+--TourBookings -nhi
+--TourCategories-quang
+--TourCustomers- quang
 --Tourists
 insert into Tourists values('utthao','TO01','12/15/1998',0);
 insert into Tourists values('phuc','TO02','02/04/1998',0);
