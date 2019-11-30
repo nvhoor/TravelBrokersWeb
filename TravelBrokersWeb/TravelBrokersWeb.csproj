@@ -125,6 +125,7 @@
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
+    <Content Include="GUI\DatTourWebForm.aspx" />
     <Content Include="images\background.jpg" />
     <Content Include="images\beach-icon.png" />
     <Content Include="images\facebook-logo.png" />
@@ -175,6 +176,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="StyleSheets\datour.css" />
     <Content Include="StyleSheets\reset.min.css" />
     <Content Include="StyleSheets\style.css" />
     <Content Include="Web.config" />
@@ -257,6 +259,13 @@
     </Compile>
     <Compile Include="GUI\ThongTinTourWebForm.aspx.designer.cs">
       <DependentUpon>ThongTinTourWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DatTourWebForm.aspx.cs">
+      <DependentUpon>DatTourWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DatTourWebForm.aspx.designer.cs">
+      <DependentUpon>DatTourWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
