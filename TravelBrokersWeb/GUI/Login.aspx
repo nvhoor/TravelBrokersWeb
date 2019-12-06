@@ -15,6 +15,7 @@
 </head>
 <body>
 	<section class="container-fluid dangky text-center">
+         <img src="../images/background.jpg" alt="nen">
      <div id="dn-content">
       <div class="text-left">
         <p class="h1 text-center text-light">Đăng nhập</p>
