@@ -53,6 +53,7 @@ Insert into Provinces values('PV04','Bà Rịa – Vũng Tàu');
 --TourBookings -nhi
 Insert into TourBookings values('TB01','Nguyễn Văn Quang','quangnguyenvan198@gmail.com','0337586768','12 Nguyễn Văn Linh',1,0,0,'Không có','quang','TR01',1,0);
 Insert into TourBookings values('TB05','Trương Thị Hồng Nhi','truongthihongnhi1998@gmail.com','0794299038','12 Nguyễn Văn Linh',1,0,0,'Không có','nhi','TR01',1,0);
+
 --TourPrograms
 insert into TourPrograms values('TP01','12/06/2019',1,'Tiêu đề chương trình tuor','Mô tả chương trình tour','PV01','TR01');
 insert into TourPrograms values('TP02','12/07/2019',2,'Tiêu đề chương trình tuor','Mô tả chương trình tour','PV02','TR01');
