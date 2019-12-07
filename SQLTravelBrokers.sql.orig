@@ -67,10 +67,18 @@ insert into Tours values('TR07','Tour số 7',null,null,'Mô tả tour','12/06/2
 insert into Tours values('TR08','Tour số 8',null,null,'Mô tả tour','12/06/2019','PV01',7,1,0,'12/06/2019','12/06/2019','nvhoor','nvhoor',1,0,'CT04');
 --TourSuppliers
 insert into TourSuppliers values('utthao','TS01','123456',null,'Hai Chau - Da Nang',0);
+<<<<<<< HEAD
 insert into TourSuppliers values('quang','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('ho','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('phuc','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('nhi','TS01','123456',null,'Hai Chau - Da Nang',0);
+=======
+insert into TourSuppliers values('ho','TS02','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('phuc','TS03','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('nhi','TS04','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('quang','TS05','123456',null,'Hai Chau - Da Nang',0);
+
+>>>>>>> 07fc67d2d30cac8988883c9f5f4225961a2c9f50
 --Roles
 insert into Roles values('RO01','Quản trị viên');
 insert into Roles values('RO02','Nhà cung cấp');
