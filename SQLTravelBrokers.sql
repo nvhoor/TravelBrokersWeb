@@ -6,6 +6,10 @@ insert into Accounts values('nhi','12345',null,'utthaonguyenthi98@gmail.com','09
 insert into Accounts values('ho','123456',null,'utthaonguyenthi98@gmail.com','0901321202','RO01',0);
 insert into Accounts values('quang','1233',null,'utthaonguyenthi98@gmail.com','0901321202','RO03',0);
 --Evaluations - utthao
+insert into Evaluations values('EV01',20,30,20,50,100,'TR01');
+insert into Evaluations values('EV02',7,10,10,50,100,'TR02');
+insert into Evaluations values('EV03',1,5,10,20,200,'TR03');
+insert into Evaluations values('EV04',1,2,4,15,100,'TR04');
 --PostCategories - phuc
 insert into PostCategories values('PC01','Tin tức du lịch');
 insert into PostCategories values('PC02','Cẩm nang du lịch');
