@@ -15,12 +15,12 @@ insert into PostCategories values('PC01','Tin tức du lịch');
 insert into PostCategories values('PC02','Cẩm nang du lịch');
 insert into PostCategories values('PC03','Kinh nghiệm du lịch');
 --Post - phuc
-insert into Posts values('PO01','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'LePhuc','01/12/2019','03/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
-insert into Posts values('PO02','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Thao','02/12/2019','04/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC02','true',null);
-insert into Posts values('PO03','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Ho','03/12/2019','05/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC03','true',null);
-insert into Posts values('PO04','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Nhi','04/12/2019','06/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
-insert into Posts values('PO05','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Quang','05/12/2019','07/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC02','true',null);
-insert into Posts values('PO06','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'LePhuc','06/12/2019','07/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
+insert into Posts values('PO01','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Thao','01/12/2019','03/12/2019','Ho',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
+insert into Posts values('PO02','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Thao','02/12/2019','04/12/2019','Thao',null,'Thẻ mô tả','Thẻ khóa','PC02','true',null);
+insert into Posts values('PO03','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Ho','03/12/2019','05/12/2019','Ho',null,'Thẻ mô tả','Thẻ khóa','PC03','true',null);
+insert into Posts values('PO04','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Ho','04/12/2019','06/12/2019','Thao',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
+insert into Posts values('PO05','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Thao','05/12/2019','07/12/2019','Ho',null,'Thẻ mô tả','Thẻ khóa','PC02','true',null);
+insert into Posts values('PO06','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Ho','06/12/2019','07/12/2019','Ho',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
 --Prices - utthao
 Insert into Prices values('PR01','TO01',7345000,6343000,'12/7/2019','12/16/2019','TT01');
 Insert into Prices values('PR02','TO01',7345000,6343000,'12/7/2019','12/16/2019','TT02');
