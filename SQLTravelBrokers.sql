@@ -28,11 +28,8 @@ Insert into Provinces values('PV02','Hồ Chí Minh');
 Insert into Provinces values('PV03','An Giang');
 Insert into Provinces values('PV04','Bà Rịa – Vũng Tàu');
 --TourBookings -nhi
-Insert into TourBookings values('TB01','Nguyễn Văn Quang','quangnguyenvan198@gmail.com','0337586768','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
-Insert into TourBookings values('TB02','Lê Văn Phúc','levanphuc24@gmail.com','0395880777','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
-Insert into TourBookings values('TB03','Nguyễn Văn Hổ','nvhoor@gmail.com','0395513130','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
-Insert into TourBookings values('TB04','Nguyễn Thị Út Thảo','utthaonguyenthi98@gmail.com','0901321202','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
-Insert into TourBookings values('TB05','Trương Thị Hồng Nhi','truongthihongnhi1998@gmail.com','0794299038','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+Insert into TourBookings values('TB01','Nguyễn Văn Quang','quangnguyenvan198@gmail.com','0337586768','12 Nguyễn Văn Linh',1,0,0,'Không có','quang','TR01',1,0);
+Insert into TourBookings values('TB05','Trương Thị Hồng Nhi','truongthihongnhi1998@gmail.com','0794299038','12 Nguyễn Văn Linh',1,0,0,'Không có','nhi','TR01',1,0);
 
 
 --TourCategories-quang
