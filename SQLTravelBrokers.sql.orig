@@ -6,10 +6,6 @@ insert into Accounts values('nhi','12345',null,'utthaonguyenthi98@gmail.com','09
 insert into Accounts values('ho','123456',null,'utthaonguyenthi98@gmail.com','0901321202','RO01',0);
 insert into Accounts values('quang','1233',null,'utthaonguyenthi98@gmail.com','0901321202','RO03',0);
 --Evaluations - utthao
-insert into Evaluations values('EV01',20,30,20,50,100,'TR01');
-insert into Evaluations values('EV02',7,10,10,50,100,'TR02');
-insert into Evaluations values('EV03',1,5,10,20,200,'TR03');
-insert into Evaluations values('EV04',1,2,4,15,100,'TR04');
 --PostCategories - phuc
 insert into PostCategories values('PC01','Tin tức du lịch');
 insert into PostCategories values('PC02','Cẩm nang du lịch');
@@ -21,11 +17,7 @@ insert into Posts values('PO03','Tiêu đề tin tức','Mô tả nội dung tin
 insert into Posts values('PO04','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Nhi','04/12/2019','06/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
 insert into Posts values('PO05','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'Quang','05/12/2019','07/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC02','true',null);
 insert into Posts values('PO06','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'LePhuc','06/12/2019','07/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
---Prices - utthao
-Insert into Prices values('PR01','TO01',7345000,6343000,'12/7/2019','12/16/2019','TT01');
-Insert into Prices values('PR02','TO01',7345000,6343000,'12/7/2019','12/16/2019','TT02');
-Insert into Prices values('PR03','TO01',7345000,6343000,'12/7/2019','12/16/2019','TT03');
-Insert into Prices values('PR04','TO01',7345000,6343000,'12/7/2019','12/16/2019','TT04');
+--Price - utthao
 --Provinces -nhi
 Insert into Provinces values('PV01','Hà Nội');
 Insert into Provinces values('PV02','Hồ Chí Minh');
@@ -37,6 +29,7 @@ Insert into TourBookings values('TB02','Lê Văn Phúc','levanphuc24@gmail.com',
 Insert into TourBookings values('TB03','Nguyễn Văn Hổ','nvhoor@gmail.com','0395513130','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
 Insert into TourBookings values('TB04','Nguyễn Thị Út Thảo','utthaonguyenthi98@gmail.com','0901321202','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
 Insert into TourBookings values('TB05','Trương Thị Hồng Nhi','truongthihongnhi1998@gmail.com','0794299038','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+
 
 --TourCategories-quang
 insert into TourCategories values('CT01','Loại tour 1','Mô tả loại tour');
@@ -74,10 +67,18 @@ insert into Tours values('TR07','Tour số 7',null,null,'Mô tả tour','12/06/2
 insert into Tours values('TR08','Tour số 8',null,null,'Mô tả tour','12/06/2019','PV01',7,1,0,'12/06/2019','12/06/2019','nvhoor','nvhoor',1,0,'CT04');
 --TourSuppliers
 insert into TourSuppliers values('utthao','TS01','123456',null,'Hai Chau - Da Nang',0);
+<<<<<<< HEAD
 insert into TourSuppliers values('quang','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('ho','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('phuc','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('nhi','TS01','123456',null,'Hai Chau - Da Nang',0);
+=======
+insert into TourSuppliers values('ho','TS02','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('phuc','TS03','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('nhi','TS04','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('quang','TS05','123456',null,'Hai Chau - Da Nang',0);
+
+>>>>>>> 07fc67d2d30cac8988883c9f5f4225961a2c9f50
 --Roles
 insert into Roles values('RO01','Quản trị viên');
 insert into Roles values('RO02','Nhà cung cấp');
