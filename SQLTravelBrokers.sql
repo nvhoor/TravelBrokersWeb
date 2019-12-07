@@ -21,7 +21,14 @@ insert into Posts values('PO06','Tiêu đề tin tức','Mô tả nội dung tin
 --Provinces -nhi
 --TourBookings -nhi
 --TourCategories-quang
+insert into TourCategories values('CT01','Loại tour 1','Mô tả loại tour');
+insert into TourCategories values('CT02','Loại tour 2','Mô tả loại tour');
+insert into TourCategories values('CT03','Loại tour 3','Mô tả loại tour');
+insert into TourCategories values('CT04','Loại tour 4','Mô tả loại tour');
 --TourCustomers- quang
+insert into TourCustomers values('TC01','Khách hàng 1','1','12/7/2019','TB01');
+insert into TourCustomers values('TC02','Khách hàng 2','1','12/7/2019','TB01');
+insert into TourCustomers values('TC03','Khách hàng 3','1','12/7/2019','TB02');
 --Tourists
 insert into Tourists values('utthao','TO01','12/15/1998',0);
 insert into Tourists values('phuc','TO02','02/04/1998',0);
@@ -49,9 +56,11 @@ insert into Tours values('TR07','Tour số 7',null,null,'Mô tả tour','12/06/2
 insert into Tours values('TR08','Tour số 8',null,null,'Mô tả tour','12/06/2019','PV01',7,1,0,'12/06/2019','12/06/2019','nvhoor','nvhoor',1,0,'CT04');
 --TourSuppliers
 insert into TourSuppliers values('utthao','TS01','123456',null,'Hai Chau - Da Nang',0);
-insert into TourSuppliers values('ho','TS01','123456',null,'Hai Chau - Da Nang',0);
-insert into TourSuppliers values('phuc','TS01','123456',null,'Hai Chau - Da Nang',0);
-insert into TourSuppliers values('nhi','TS01','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('ho','TS02','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('phuc','TS03','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('nhi','TS04','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('quang','TS05','123456',null,'Hai Chau - Da Nang',0);
+
 --Roles
 insert into Roles values('RO01','Quản trị viên');
 insert into Roles values('RO02','Nhà cung cấp');
