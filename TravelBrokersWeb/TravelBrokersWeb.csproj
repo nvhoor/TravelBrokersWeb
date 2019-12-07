@@ -126,18 +126,12 @@
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
     <Content Include="GUI\DatTourWebForm.aspx" />
-    <Content Include="images\4.png" />
     <Content Include="images\background.jpg" />
     <Content Include="images\beach-icon.png" />
     <Content Include="images\facebook-logo.png" />
     <Content Include="images\find-beach-icon.png" />
     <Content Include="images\flight.jpg" />
     <Content Include="images\flight2.png" />
-    <Content Include="images\i-chair.png" />
-    <Content Include="images\i-clock.png" />
-    <Content Include="images\i-code.png" />
-    <Content Include="images\i-date.png" />
-    <Content Include="images\i-price.png" />
     <Content Include="images\instagram-logo.png" />
     <Content Include="images\island.png" />
     <Content Include="images\proposal-flight.png" />
@@ -198,6 +192,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\ToursHandler.cs" />
+    <Content Include="App_Code\TourCategoriesHandler.cs" />
+    <Content Include="App_Code\TouristTypeHandler.cs" />
+    <Content Include="App_Code\PricesHandler.cs" />
+    <Content Include="App_Code\ProvincesHandler.cs" />
+    <Content Include="App_Code\TourProgramsHandler.cs" />
+    <Content Include="App_Code\AccountsHandler.cs" />
+    <Content Include="App_Code\TourBookingsHandler.cs" />
+    <Content Include="App_Code\TourCustomersHandler.cs" />
     <Compile Include="GUI\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
