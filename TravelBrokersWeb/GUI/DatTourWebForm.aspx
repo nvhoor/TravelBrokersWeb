@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="DatTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
-    <script src="../StyleSheets/datour.css"></script>
+    <link href="../StyleSheets/datour.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -20,32 +20,32 @@
             <div class="frame-info">
                 <div class="row">
                     <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <div class="f-left l"><asp:Image runat="server" src="img/i-code.png" alt="code" /></div>
+                        <div class="f-left l"><asp:Image runat="server" src="../images/i-code.png" alt="code" /></div>
                         <div class="f-left r">NDSGN381-023-011219VJ-D</div>
                         <div class="clear"></div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <div class="f-left l"><asp:Image runat="server" src="img/i-chair.png" alt="chair" /></div>
+                        <div class="f-left l"><asp:Image runat="server" src="../images/i-chair.png" alt="chair" /></div>
                         <div class="f-left r">Số chỗ còn nhận: <span class="font500">5</span></div>
                         <div class="clear"></div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <div class="f-left l"><asp:Image runat="server" src="img/i-date.png" alt="date" /></div>
+                        <div class="f-left l"><asp:Image runat="server" src="../images/i-date.png" alt="date" /></div>
                         <div class="f-left r">Ngày khởi hành: <span class="font500">01/12/2019</span></div>
                         <div class="clear"></div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <div class="f-left l"><asp:Image runat="server" src="img/i-date.png" alt="date" /></div>
+                        <div class="f-left l"><asp:Image runat="server" src="../images/i-date.png" alt="date" /></div>
                         <div class="f-left r"><a href="/danh-sach-tour/NDSGN381/hue-la-vang-dong-phong-nha-thien-duong-ba-na-cau-vang-hoi-an-da-nang-khach-san-4-5sao-tang-show-charming-tour-tieu-chuan.aspx" target="_blank" class="b">Ngày khác</a></div>
                         <div class="clear"></div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <div class="f-left l"><asp:Image runat="server"  src="img/i-clock.png" alt="clock" /></div>
+                        <div class="f-left l"><asp:Image runat="server"  src="../images/i-clock.png" alt="clock" /></div>
                         <div class="f-left r">Số ngày: <span class="font500">5</span></div>
                         <div class="clear"></div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-                        <div class="f-left l"><asp:Image runat="server"  src="img/i-price.png" alt="price" /></div>
+                        <div class="f-left l"><asp:Image runat="server"  src="../images/i-price.png" alt="price" /></div>
                         <div class="f-left r">Giá: <span class="font500 price">7,390,000 đ</span></div>
                         <div class="clear"></div>
                     </div>
