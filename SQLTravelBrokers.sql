@@ -19,7 +19,18 @@ insert into Posts values('PO05','Tiêu đề tin tức','Mô tả nội dung tin
 insert into Posts values('PO06','Tiêu đề tin tức','Mô tả nội dung tin tức','Mô tả đoạn ngắn tin tức',null,'LePhuc','06/12/2019','07/12/2019','Phuc',null,'Thẻ mô tả','Thẻ khóa','PC01','true',null);
 --Price - utthao
 --Provinces -nhi
+Insert into Provinces values('PV01','Hà Nội');
+Insert into Provinces values('PV02','Hồ Chí Minh');
+Insert into Provinces values('PV03','An Giang');
+Insert into Provinces values('PV04','Bà Rịa – Vũng Tàu');
 --TourBookings -nhi
+Insert into TourBookings values('TB01','Nguyễn Văn Quang','quangnguyenvan198@gmail.com','0337586768','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+Insert into TourBookings values('TB02','Lê Văn Phúc','levanphuc24@gmail.com','0395880777','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+Insert into TourBookings values('TB03','Nguyễn Văn Hổ','nvhoor@gmail.com','0395513130','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+Insert into TourBookings values('TB04','Nguyễn Thị Út Thảo','utthaonguyenthi98@gmail.com','0901321202','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+Insert into TourBookings values('TB05','Trương Thị Hồng Nhi','truongthihongnhi1998@gmail.com','0794299038','12 Nguyễn Văn Linh',1,0,0,'Không có','TR01',1,0);
+
+
 --TourCategories-quang
 --TourCustomers- quang
 --Tourists
@@ -49,6 +60,7 @@ insert into Tours values('TR07','Tour số 7',null,null,'Mô tả tour','12/06/2
 insert into Tours values('TR08','Tour số 8',null,null,'Mô tả tour','12/06/2019','PV01',7,1,0,'12/06/2019','12/06/2019','nvhoor','nvhoor',1,0,'CT04');
 --TourSuppliers
 insert into TourSuppliers values('utthao','TS01','123456',null,'Hai Chau - Da Nang',0);
+insert into TourSuppliers values('quang','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('ho','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('phuc','TS01','123456',null,'Hai Chau - Da Nang',0);
 insert into TourSuppliers values('nhi','TS01','123456',null,'Hai Chau - Da Nang',0);
