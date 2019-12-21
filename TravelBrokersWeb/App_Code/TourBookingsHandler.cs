@@ -9,18 +9,15 @@ namespace TravelBrokersWeb.App_Code
 {
     public class TourBookingsHandler
     {
-        public void insertTourBookings(string id, string fullname,string email,string mobie,string address, int adult,int children, int kid, string note,string accountID, string tourID,int status, bool deleted)
+        public void insertTourBookings(string id, string fullname,string email,string mobie,string address,string note,string accountID, string tourID,int status, bool deleted)
         {
-            SqlCommand cmd = new SqlCommand("insert into TourBookings values (@id,@fullname,@email,@mobie,@address,@adult,@children,@kid,@note,@accountID,@tourID,@status,@deleted)");
+            SqlCommand cmd = new SqlCommand("insert into TourBookings values (@id,@fullname,@email,@mobie,@address,@note,@accountID,@tourID,@status,@deleted)");
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@id", id);
             cmd.Parameters.AddWithValue("@fullname", fullname);
             cmd.Parameters.AddWithValue("@email", email);
             cmd.Parameters.AddWithValue("@mobie", mobie);
             cmd.Parameters.AddWithValue("@address", address);
-            cmd.Parameters.AddWithValue("@adult", adult);
-            cmd.Parameters.AddWithValue("@children", children);
-            cmd.Parameters.AddWithValue("@kid", kid);
             cmd.Parameters.AddWithValue("@note", note);
             cmd.Parameters.AddWithValue("@accountID", accountID);
             cmd.Parameters.AddWithValue("@tourID", tourID);
