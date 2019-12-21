@@ -16,15 +16,16 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@tourID", tourID);
             return SQLDB.SQLDB.getData(cmd);
         }
-        public void insertTourProgram(string id, DateTime date, string orderNumber, string title, string description, string tourID)
+        public void insertTourProgram(string id, DateTime date, string orderNumber, string title, string description,string destinationID, string tourID)
         {
-            SqlCommand cmd = new SqlCommand("insert into TourPrograms values (@id,@date,@orderNumber,@title,@description,@tourID)");
+            SqlCommand cmd = new SqlCommand("insert into TourPrograms values (@id,@date,@orderNumber,@title,@description,@destinationID,@tourID)");
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@id", id);
             cmd.Parameters.AddWithValue("@date", date);
             cmd.Parameters.AddWithValue("@orderNumber", orderNumber);
             cmd.Parameters.AddWithValue("@title", title);
             cmd.Parameters.AddWithValue("@description", description);
+            cmd.Parameters.AddWithValue("@destinationID", destinationID);
             cmd.Parameters.AddWithValue("@tourID", tourID);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
