@@ -17,6 +17,26 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@tourID", tourID);
             return SQLDB.SQLDB.getData(cmd);
         }
+        public void updatePrice(string id, string tourID, decimal originalPrice, decimal promotionPrice, DateTime StartDatePro, DateTime EndDatePro, string touristTypeID)
+        {
+            SqlCommand cmd = new SqlCommand("insert into SANPHAM values (@id,@tourID,@originalPrice,@promotionPrice,@StartDatePro,@EndDatePro,@touristTypeID)");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@tourID", tourID);
+            cmd.Parameters.AddWithValue("@originalPrice", originalPrice);
+            cmd.Parameters.AddWithValue("@promotionPrice", promotionPrice);
+            cmd.Parameters.AddWithValue("@StartDatePro", StartDatePro);
+            cmd.Parameters.AddWithValue("@EndDatePro", EndDatePro);
+            cmd.Parameters.AddWithValue("@touristTypeID", touristTypeID);
+            SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
+        public void deletePrice(string idPrices)
+        {
+            SqlCommand cmd = new SqlCommand("delete from Prices where id=@id");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", idPrices);
+            SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
 
 
     }
