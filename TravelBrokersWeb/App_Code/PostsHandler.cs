@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TravelBrokersWeb.App_Code
 {
-    public class TourSuppliers
+    public class Posts
     {
     }
 }
