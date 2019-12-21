@@ -50,7 +50,5 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@id", idPrices);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
-
-
     }
 }
