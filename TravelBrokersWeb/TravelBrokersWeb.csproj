@@ -201,7 +201,7 @@
     <Content Include="App_Code\AccountsHandler.cs" />
     <Content Include="App_Code\TourBookingsHandler.cs" />
     <Content Include="App_Code\TourCustomersHandler.cs" />
-    <Content Include="App_Code\Tourist.cs" />
+    <Compile Include="App_Code\TouristsHandler.cs" />
     <Compile Include="GUI\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
