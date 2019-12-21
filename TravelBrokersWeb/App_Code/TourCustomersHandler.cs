@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -7,5 +9,17 @@ namespace TravelBrokersWeb.App_Code
 {
     public class TourCustomersHandler
     {
+        public void insertTourCustomers(string id, string fullname,Boolean gender, DateTime birthday, string tourBookingID)
+        {
+            SqlCommand cmd = new SqlCommand("insert into TourCustomers values (@id,@fullname,@gender,@birthday,@tourBookingID)");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@fullname", fullname);
+            cmd.Parameters.AddWithValue("@gender", gender);
+            cmd.Parameters.AddWithValue("@birthday", birthday);
+            cmd.Parameters.AddWithValue("@tourBookingID", tourBookingID);
+            SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
+        
     }
 }
