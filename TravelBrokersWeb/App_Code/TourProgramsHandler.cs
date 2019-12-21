@@ -16,5 +16,12 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@tourID", tourID);
             return SQLDB.SQLDB.getData(cmd);
         }
+        public void deleteTourProgram(string idTourProgram)
+        {
+            SqlCommand cmd = new SqlCommand("delete from TourPrograms where id=@id");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", idTourProgram);
+            SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
     }
 }
