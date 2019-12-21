@@ -9,7 +9,7 @@ namespace TravelBrokersWeb.App_Code
 {
     public class TourCustomersHandler
     {
-        public void insertTourCustomers(string id, string fullname,Boolean gender, DateTime birthday, string tourBookingID)
+        public void insertTourCustomers(string id, string fullname,bool gender, DateTime birthday, string tourBookingID)
         {
             SqlCommand cmd = new SqlCommand("insert into TourCustomers values (@id,@fullname,@gender,@birthday,@tourBookingID)");
             cmd.CommandType = CommandType.Text;
