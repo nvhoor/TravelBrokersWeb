@@ -19,7 +19,7 @@ namespace TravelBrokersWeb.App_Code
         }
         public void updatePrice(string id, string tourID, decimal originalPrice, decimal promotionPrice, DateTime StartDatePro, DateTime EndDatePro, string touristTypeID)
         {
-            SqlCommand cmd = new SqlCommand("insert into SANPHAM values (@id,@tourID,@originalPrice,@promotionPrice,@StartDatePro,@EndDatePro,@touristTypeID)");
+            SqlCommand cmd = new SqlCommand("update SANPHAM set tourID=@tourID,originalPrice=@originalPrice,promotionPrice=@promotionPrice,StartDatePro=@StartDatePro,EndDatePro=@EndDatePro,touristTypeID=@touristTypeID where id=@id");
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@id", id);
             cmd.Parameters.AddWithValue("@tourID", tourID);
