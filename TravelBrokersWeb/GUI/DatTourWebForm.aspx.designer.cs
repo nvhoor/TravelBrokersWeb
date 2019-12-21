@@ -17,7 +17,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox contact_name;
         
@@ -26,7 +26,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox mobilephone;
         
@@ -35,7 +35,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox address;
         
@@ -44,7 +44,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox email;
         
@@ -53,7 +53,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox phone;
         
@@ -62,7 +62,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox adult;
         
@@ -71,7 +71,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox children11;
         
@@ -80,7 +80,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox children;
         
@@ -89,7 +89,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox small_children;
         
@@ -98,7 +98,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox guests;
         
@@ -107,7 +107,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dob0_day;
         
@@ -116,7 +116,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dob0_month;
         
@@ -125,7 +125,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dob0_year;
         
@@ -134,7 +134,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList personkind0;
         
@@ -143,7 +143,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList loaikhachnoidia0;
         
@@ -152,7 +152,7 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList loaiphuthuphongdon0;
         
@@ -161,8 +161,20 @@ namespace TravelBrokersWeb.GUI {
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// To modify, move the field declaration from the designer file to a code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkDieuKhoan;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new TravelBrokersWeb.GUI.DefaultMasterPage Master {
+            get {
+                return ((TravelBrokersWeb.GUI.DefaultMasterPage)(base.Master));
+            }
+        }
     }
 }

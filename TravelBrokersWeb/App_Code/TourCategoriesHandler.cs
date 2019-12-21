@@ -15,6 +15,8 @@ namespace TravelBrokersWeb.App_Code
             SqlCommand cmd = new SqlCommand("delete from TourCategories where id=@id");
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@id", idTourCategories);
+        }
+
         public void insertTourCategories(string id, string name, string description)
         {
             SqlCommand cmd = new SqlCommand("insert into TourCategories values (@id,@name,@description)");

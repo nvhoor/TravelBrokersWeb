@@ -308,10 +308,10 @@
         <div class="row">
             <div class="col-xs-12 bor-bot mg-bot20">
                 <div class="radio tienmat">
-                    <label style="display:;"><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="1" checked="checked" /><label class="lb_r">Tiền mặt</label></label>
+                    <label ><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="1" checked="checked" /><label class="lb_r">Tiền mặt</label></label>
                 </div>
                 <div class="radio chuyenkhoan">
-                    <label style="display:;"><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="2" /><label class="lb_r">Chuyển khoản</label></label>
+                    <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="2" /><label class="lb_r">Chuyển khoản</label></label>
                 </div>
                 <div class="radio internet">
                     <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="9" /><label class="lb_r">ATM / Internet Banking</label></label>
@@ -340,7 +340,7 @@
                     </div>
                 </div>
                 <div class="radio qrcode">
-                    <label><asp:RadioButton runat="server" type="radio" class="chkPayment" name="paymentID" value="16" /><label class="lb_r"/>Thanh toán bằng quét QRCode</label></label>
+                    <label><asp:RadioButton runat="server" type="radio" class="chkPayment" name="paymentID" value="16" /><label class="lb_r">Thanh toán bằng quét QRCode</label></label>
                 </div>
             </div>
             <div class="col-xs-12">
@@ -501,7 +501,5 @@
         <div class="col-xs-12 mg-bot30 text-center">
                 <asp:Button runat="server" type="submit" class="btn btn-md btn-book" Text="Đặt tour"></asp:Button>
         </div>
-</div>    
-
-    </div>
+</div>   
 </asp:Content>
