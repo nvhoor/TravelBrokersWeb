@@ -8,13 +8,13 @@ using System.Web;
 
 namespace TravelBrokersWeb.App_Code
 {
-    public class AccountsHandler
+    public class Posts
     {
-        public void deleteAccount(string username)
+        public void deletePosts(string idPosts)
         {
-            SqlCommand cmd = new SqlCommand("delete from Account where username=@username");
+            SqlCommand cmd = new SqlCommand("delete from Posts where id=@id");
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@id", idPosts);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
     }
