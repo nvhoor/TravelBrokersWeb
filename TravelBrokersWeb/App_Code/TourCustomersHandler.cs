@@ -29,5 +29,17 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@touristTypeID", touristTypeID);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
+        public void updateTourCustomers(string id, string fullname,bool gender, DateTime birthday, string tourBookingID,string touristTypeID)
+        {
+            SqlCommand cmd = new SqlCommand("update TourCustomers set fullname=@fullname,gender=@gender,birthday=@birthday,tourBookingID=@tourBookingID,touristTypeID=@touristTypeID where id=@id");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@fullname", fullname);
+            cmd.Parameters.AddWithValue("@gender", gender);
+            cmd.Parameters.AddWithValue("@birthday", birthday);
+            cmd.Parameters.AddWithValue("@tourBookingID", tourBookingID);
+            cmd.Parameters.AddWithValue("@touristTypeID", touristTypeID);
+            SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
     }
 }

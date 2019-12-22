@@ -36,5 +36,18 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@id", idTourProgram);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
+        public void updateTourProgram(string id, DateTime date, string orderNumber, string title, string description,string destinationID, string tourID)
+        {
+            SqlCommand cmd = new SqlCommand("update TourPrograms set date=@date,orderNumber=@orderNumber,title=@title,description=@description,destinationID=@destinationID,tourID=@tourID where id=@id");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@date", date);
+            cmd.Parameters.AddWithValue("@orderNumber", orderNumber);
+            cmd.Parameters.AddWithValue("@title", title);
+            cmd.Parameters.AddWithValue("@description", description);
+            cmd.Parameters.AddWithValue("@destinationID", destinationID);
+            cmd.Parameters.AddWithValue("@tourID", tourID);
+            SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
     }
 }
