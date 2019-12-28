@@ -21,7 +21,7 @@
                         + minutes + "m " + seconds + "s ";
                         if (distance < 0) {
                           clearInterval(x);
-                          document.getElementById("demo").innerHTML = "Hết hạn";
+                          document.getElementById("count").innerHTML = "Hết hạn";
                         }
                       }, 1000);
                       </script>
@@ -37,7 +37,7 @@
                       <hr>
                       <p><a href="#" class="stretched-link" style="position: relative;"></a></p>
                       <div class="row mt-3">
-                        <div class="col-4 text-light font-italic badge badge-secondary mr-auto ml-3 tour-price"><s><%#:string.Format("{0:n0}",Eval("origanalPrice"))%>đ</s></div>
+                        <div class="col-4 text-light font-italic badge badge-secondary mr-auto ml-3 tour-price"><s><%#:string.Format("{0:n0}",Eval("originalPrice"))%>đ</s></div>
                         <div class="col-4 text-light font-weight-bold badge badge-danger ml-auto mr-3 tour-price"><%#:string.Format("{0:n0}",Eval("promotionPrice"))%>đ</div>
                       </div>
                     </div>

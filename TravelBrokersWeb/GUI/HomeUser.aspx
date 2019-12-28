@@ -8,7 +8,7 @@
             <div class="container-fluid">
               <div class="h3 mt-3 text-dark  text-center">TOUR HOT NHẤT</div>
               <div class="mt-1 pb-1 text-dark border-bottom text-center">Tour được đặt nhiều nhất</div>
-        <uc1:DanhSachSPWebUserControl runat="server" id="DanhSachSPWebUserControl" />
+        <uc1:DanhSachSPWebUserControl runat="server" id="dsHotNhat" />
                 </div>
               </div>
         </div>
@@ -17,7 +17,7 @@
               <div class="container-fluid">
                 <div class="h3 mt-3 text-dark  text-center">TOUR MỚI NHẤT</div>
                 <div class="mt-1 pb-1 text-dark border-bottom text-center">Tour mới nhất</div>
-            <uc1:DanhSachSPWebUserControl runat="server" ID="DanhSachSPWebUserControl1" />
+            <uc1:DanhSachSPWebUserControl runat="server" ID="dsMoiNhat" />
                   </div>
                 </div>
             </div>

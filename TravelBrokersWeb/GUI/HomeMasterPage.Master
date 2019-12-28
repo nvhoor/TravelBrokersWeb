@@ -20,6 +20,7 @@
 
   </head>
   <body>
+      <form id="form1" runat="server">
     <header>
       <h1>TRAVEL BROKERS</h1>
       <p>Travel is the only thing you buy that makes you richer</p>
@@ -78,7 +79,7 @@
                 <div class="dropdown find-dropdown">
                     <div class="col-lg-5 dropdown-toggle" id="search-tour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="card">
-                            <img class="card-img-top" src="images/find-beach-icon.png" alt="Card image">
+                            <img class="card-img-top" src="../images/find-beach-icon.png" alt="Card image">
                            
                             <p class="card-title text-find-tour font-weight-bold">TÌM TOUR</p>
                         </div>
@@ -106,7 +107,7 @@
                 <div class="dropdown find-dropdown-r">
                     <div class="col-lg-5 dropdown-toggle" id="proposal-tour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="card">
-                            <img class="card-img-top" src="images/proposal-flight.png" alt="Card image">
+                            <img class="card-img-top" src="../images/proposal-flight.png" alt="Card image">
                             
                             <p class="card-title text-proposal-tour font-weight-bold">ĐỀ XUẤT TOUR</p>
                         </div>
@@ -146,7 +147,7 @@
                 <div class="carousel-inner" role="listbox">
                     <!--First slide-->
                     <div class="carousel-item active">
-                         <asp:Repeater runat="server" ID="rpDSDM1">
+                         <asp:Repeater runat="server" ID="rpDSDM1" OnItemCommand="rpDSDM1_ItemCommand">
                         <HeaderTemplate>
                           <div class="row">
                     </HeaderTemplate>
@@ -156,7 +157,7 @@
                                 <img class="card-img-top" src="../images/<%#:Eval("image") %>"
                                   alt="Card image cap">
                                 <div class="card-body">
-                                  <h4 class="card-title"><%#:Eval("name") %></h4>
+                                  <asp:LinkButton class="card-title stretched-link" runat="server" ID="lnkDM1" CommandName="dm" CommandArgument='<%#:Eval("id") %>' Text='<%#:Eval("name") %>'></asp:LinkButton>
                                 </div>
                               </div>
                             </div>
@@ -171,7 +172,7 @@
             
                     <!--Second slide-->
                     <div class="carousel-item">
-                         <asp:Repeater runat="server" ID="Repeater1">
+                         <asp:Repeater runat="server" ID="rpDSDM2">
                         <HeaderTemplate>
                           <div class="row">
                     </HeaderTemplate>
@@ -181,7 +182,7 @@
                                 <img class="card-img-top" src="../images/proposal-flight.png"
                                   alt="Card image cap">
                                 <div class="card-body">
-                                  <h4 class="card-title"><%#:Eval("name") %></h4>
+                                <asp:LinkButton class="card-title stretched-link" runat="server" ID="lnkDM1" CommandName="dm" CommandArgument='<%#:Eval("id") %>' Text='<%#:Eval("name") %>'></asp:LinkButton>
                                 </div>
                               </div>
                             </div>
@@ -246,12 +247,13 @@
       </div>
     </section>
   </footer>
-  <!-- <script>
+   <script>
   $(document).ready(function(){
     $("#carouselExampleControls2").carousel("pause");
           
   
   });
-  </script> -->
+  </script> 
+  </form>
 </body>
 </html>

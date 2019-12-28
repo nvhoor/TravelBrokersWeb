@@ -115,6 +115,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="GUI\DanhSachSPTheoDanhMucWebForm.aspx" />
     <Content Include="GUI\DanhSachSPWebUserControl.ascx" />
     <Content Include="GUI\HomeMasterPage.Master" />
     <Content Include="GUI\AdminMasterPage.Master" />
@@ -192,17 +193,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\ToursHandler.cs" />
-    <Content Include="App_Code\TourCategoriesHandler.cs" />
-    <Content Include="App_Code\TouristTypeHandler.cs" />
-    <Content Include="App_Code\PricesHandler.cs" />
-    <Content Include="App_Code\ProvincesHandler.cs" />
-    <Content Include="App_Code\TourProgramsHandler.cs" />
-    <Content Include="App_Code\AccountsHandler.cs" />
-    <Content Include="App_Code\TourBookingsHandler.cs" />
-    <Content Include="App_Code\TourCustomersHandler.cs" />
+    <Compile Include="App_Code\ToursHandler.cs" />
+    <Compile Include="App_Code\TourCategoriesHandler.cs" />
+    <Compile Include="App_Code\TouristTypeHandler.cs" />
+    <Compile Include="App_Code\PricesHandler.cs" />
+    <Compile Include="App_Code\ProvincesHandler.cs" />
+    <Compile Include="App_Code\TourProgramsHandler.cs" />
+    <Compile Include="App_Code\AccountsHandler.cs" />
+    <Compile Include="App_Code\TourBookingsHandler.cs" />
+    <Compile Include="App_Code\TourCustomersHandler.cs" />
     <Compile Include="App_Code\TouristsHandler.cs" />
-     <Compile Include="App_Code\TourSuppliersHandler.cs" />
+    <Compile Include="App_Code\TourSuppliersHandler.cs" />
     <Compile Include="App_Code\EvaluationsHandler.cs" />
     <Compile Include="App_Code\PostCategoriesHandler.cs" />
     <Compile Include="App_Code\PostsHandler.cs" />
@@ -217,6 +218,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhSachSPTheoDanhMucWebForm.aspx.cs">
+      <DependentUpon>DanhSachSPTheoDanhMucWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhSachSPTheoDanhMucWebForm.aspx.designer.cs">
+      <DependentUpon>DanhSachSPTheoDanhMucWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\DanhSachSPWebUserControl.ascx.cs">
       <DependentUpon>DanhSachSPWebUserControl.ascx</DependentUpon>

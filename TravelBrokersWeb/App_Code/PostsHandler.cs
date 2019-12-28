@@ -8,7 +8,7 @@ using System.Web;
 
 namespace TravelBrokersWeb.App_Code
 {
-    public class Posts
+    public class PostsHandler
     {
         public void deletePosts(string idPosts)
         {

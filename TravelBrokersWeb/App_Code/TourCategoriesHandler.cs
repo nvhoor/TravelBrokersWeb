@@ -16,7 +16,21 @@ namespace TravelBrokersWeb.App_Code
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@id", idTourCategories);
         }
-
+        public DataTable getListCategories(int start, int end)
+        {
+            SqlCommand cmd = new SqlCommand("Select * from (SELECT *,ROW_NUMBER() OVER (ORDER BY id) AS RowNum FROM TourCategories a) as subTable where subTable.RowNum between @start and @end");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@start", start);
+            cmd.Parameters.AddWithValue("@end", end);
+           return SQLDB.SQLDB.getData(cmd);
+        }
+        public DataTable findTourCategoriesByID(string idTourCategories)
+        {
+            SqlCommand cmd = new SqlCommand("select * from TourCategories where id=@id");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@id", idTourCategories);
+           return SQLDB.SQLDB.getData(cmd);
+        }
         public void insertTourCategories(string id, string name, string description)
         {
             SqlCommand cmd = new SqlCommand("insert into TourCategories values (@id,@name,@description)");
