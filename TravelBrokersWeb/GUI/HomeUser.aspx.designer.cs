@@ -13,21 +13,21 @@ namespace TravelBrokersWeb.GUI {
     public partial class HomeUser {
         
         /// <summary>
-        /// DanhSachSPWebUserControl control.
+        /// dsHotNhat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl DanhSachSPWebUserControl;
+        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl dsHotNhat;
         
         /// <summary>
-        /// DanhSachSPWebUserControl1 control.
+        /// dsMoiNhat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl DanhSachSPWebUserControl1;
+        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl dsMoiNhat;
     }
 }

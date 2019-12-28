@@ -10,42 +10,33 @@
 namespace TravelBrokersWeb.GUI {
     
     
-    public partial class HomeMasterPage {
+    public partial class DanhSachSPTheoDanhMucWebForm {
         
         /// <summary>
-        /// form1 control.
+        /// lblDanhMuc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblDanhMuc;
         
         /// <summary>
-        /// rpDSDM1 control.
+        /// lblMoTaDM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rpDSDM1;
+        protected global::System.Web.UI.WebControls.Label lblMoTaDM;
         
         /// <summary>
-        /// rpDSDM2 control.
+        /// dsTourTheoDM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rpDSDM2;
-        
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::TravelBrokersWeb.GUI.DanhSachSPWebUserControl dsTourTheoDM;
     }
 }
