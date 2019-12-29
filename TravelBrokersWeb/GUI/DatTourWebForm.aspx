@@ -1,12 +1,27 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="DatTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/DefaultMasterPage.Master" AutoEventWireup="true" CodeBehind="DatTourWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.DatTourWebForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
-    <link href="../StyleSheets/datour.css" />
+    <link rel="stylesheet" href="../StyleSheets/datour.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="reset.min.css" type="text/css" data-noprefix>
+    <link rel="stylesheet" type="text/css" href="style.css" data-noprefix>
+    <script src="prefixfree.min.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            height: 17px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
 
-        <div class="col-xs-12 mg-bot30">
+        <div class="col-xs-12 mt-3">
             <div class="title1">THÔNG TIN TOUR</div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 w-25">
@@ -64,11 +79,11 @@
             <table class="table table-bordered">
                 <thead>
                     <tr class="tb-title">
-                        <td>Người lớn (Từ 12 tuổi trở lên)</td>
-                        <td>Trẻ em (Từ 5 tuổi đến dưới 12 tuổi)</td>
-                        <td>Trẻ nhỏ (Từ 2 tuổi đến dưới 5 tuổi)</td>
-                        <td>Em bé (Dưới 2 tuổi)</td>
-                        <td>Phụ thu phòng đơn</td>
+                        <td class="auto-style1">Người lớn (Từ 12 tuổi trở lên)</td>
+                        <td class="auto-style1">Trẻ em (Từ 5 tuổi đến dưới 12 tuổi)</td>
+                        <td class="auto-style1">Trẻ nhỏ (Từ 2 tuổi đến dưới 5 tuổi)</td>
+                        <td class="auto-style1">Em bé (Dưới 2 tuổi)</td>
+                        <td class="auto-style1">Phụ thu phòng đơn</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -92,19 +107,19 @@
                     <div class="form-group">
                         <label>Họ tên (<span class="star">*</span>)</label>
                         <div>
-                            <asp:TextBox runat="server" class="form-control" id="contact_name" name="contact_name" required="required" type="text" value="" />
+                            <asp:TextBox runat="server" class="form-control" id="txtcontact_name" name="contact_name" required="required" type="text" value="" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Di động (<span class="star">*</span>)</label>
                         <div>
-                            <asp:TextBox runat="server" class="form-control" id="mobilephone" name="mobilephone" onchange="CheckMobile();" onkeypress="return funCheckInt(event)" required="required" type="text" value="" />
+                            <asp:TextBox runat="server" class="form-control" id="txtmobilephone" name="mobilephone" onchange="CheckMobile();" onkeypress="return funCheckInt(event)" required="required" type="text" value="" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Địa chỉ</label>
                         <div>
-                            <asp:TextBox runat="server"  class="form-control" id="address" name="address" type="text" value="" />
+                            <asp:TextBox runat="server"  class="form-control" id="txtaddress" name="address" type="text" value="" />
                         </div>
                     </div>
                 </div>
@@ -112,55 +127,27 @@
                     <div class="form-group">
                         <label>Email (<span class="star">*</span>)</label>
                         <div>
-                            <asp:TextBox runat="server" class="form-control" id="email" name="email" required="required" type="email" value="" />
+                            <asp:TextBox runat="server" class="form-control" id="txtemail" name="email" required="required" type="email" value="" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Điện thoại</label>
                         <div>
-                            <asp:TextBox runat="server" class="form-control" id="phone" name="phone" onkeypress="return funCheckInt(event)" type="text" value="" />
+                            <asp:TextBox runat="server" class="form-control" id="txtphone" name="phone" onkeypress="return funCheckInt(event)" type="text" value="" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-2 col-xs-6 mg-bot15">
-                                <label>Người lớn</label>
-                                <div>
-                                    <asp:TextBox runat="server" class="form-control" id="adult" name="adult" onblur="javascript:clear_text(this);" onclick="javascript:show_text('Từ 12 tuổi trở lên',this)" onkeypress="return funCheckInt(event)" type="text" value="1" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-6  mg-bot15">
-                                <label>Trẻ em</label>
-                                <div>
-                                    <asp:TextBox runat="server" class="form-control" id="children11" name="children11" onblur="javascript:clear_text(this);" onclick="javascript:show_text('Từ 5 tuổi đến dưới 12 tuổi',this)" onkeypress="return funCheckInt(event)" type="text" value="0" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-6  mg-bot15">
-                                <label>Trẻ nhỏ</label>
-                                <div>
-                                    <asp:TextBox runat="server" class="form-control" id="children" name="children" onblur="javascript:clear_text(this);" onclick="javascript:show_text('Từ 2 tuổi đến dưới 5 tuổi',this)" onkeypress="return funCheckInt(event)" type="text" value="0" />
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-6 mg-bot15">
-                                <label>Em bé</label>
-                                <div>
-                                    <asp:TextBox runat="server" class="form-control" id="small_children" name="small_children" onblur="javascript:clear_text(this);" onclick="javascript:show_text('Dưới 2 tuổi',this)" onkeypress="return funCheckInt(event)" type="text" value="0" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                <label>Số khách</label>
-                                <div>
-                                    <asp:TextBox runat="server" class="form-control" id="guests" name="guests"  ReadOnly="true" type="text" value="1" />
-                                </div>
-                            </div>
-                        </div>
+                           <label>Số khách</label>
+                           <div>
+                                <asp:TextBox runat="server" class="form-control" id="txtguests" name="guests" type="text" value="1" />
+                           </div>
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <label>Ghi chú</label>
                         <div>
-                            <textarea class="form-control" cols="20" id="note" name="note" rows="4"></textarea>
+                            <textarea runat="server" class="form-control" cols="20" id="txtNote" name="note" rows="4"></textarea>
                         </div>
                     </div>
                 </div>
@@ -205,46 +192,28 @@
             <div class="form-horizontal">
                 <div class="row mg-bot10">
                     <div class="col-lg-3 col-md-8 col-sm-6 col-xs-12 mg-bot10">
-                        <label class="mg-bot5">Họ tên (<span class="star">*</span>)</label>
+                        <label class="mg-bot5">Họ tên (<span class="star"></span>)</label>
                         <div>
-                            <asp:TextBox runat="server" class="form-control" name="[0].fullname" required="required" type="text" value="" />
+                            <asp:TextBox runat="server" class="form-control" name="[0].fullname" type="text" value="" ID="txtName1" />
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mg-bot10">
                         <label class="mg-bot5">Giới tính</label>
                         <div>
-                            <asp:DropDownList runat="server" class="form-control" name="[0].gender">
+                            <asp:DropDownList runat="server" class="form-control" name="[0].gender" ID="drGender">
                                 <asp:ListItem value="0">Nữ</asp:ListItem>
                                 <asp:ListItem value="1">Nam</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <label class="mg-bot5">Ngày sinh (<span class="star">*</span>)</label>
+                        <label class="mg-bot5">Ngày sinh</label>
                         <div>
-                            <input data-val="true" data-val-date="The field dateofbirth must be a date." id="dateofbirth0" name="[0].dateofbirth" type="hidden" value="">
-                            <div class="date-dropdowns">
-                                <input type="hidden" id="dob0" name="dob0">
-                                <asp:DropDownList runat="server" class="day hideArow form-control dateDDL" name="dob0_[day]" id="dob0_day" >
-
-                                </asp:DropDownList>
-                                <asp:DropDownList runat="server" class="month hideArow form-control dateDDL" name="dob0_[month]" id="dob0_month">
-                                </asp:DropDownList>
-                                <asp:DropDownList runat="server" class="year hideArow form-control dateDDL" name="dob0_[year]" id="dob0_year">
- 
-                                </asp:DropDownList>
-                            </div>
+                            <input id="datepicker" class="form-group" placeholder="" />
                             <script>
-                                    $("#dob" + '0').dateDropdowns({
-                                        submitFieldName: 'dob' + '0',
-                                        submitFormat: "dd/mm/yyyy",
-                                        maxAge: 68
-                                        //,required: true
-                                    });
-                                    $('#dob' + '0').change(function () {
-                                        $('#dateofbirth' + '0').val($('#dob' + '0').val());
-                                        CheckDOBByPersonkind();
-                                    });
+                            $('#datepicker').datepicker({
+                            uiLibrary: 'bootstrap4'
+                            });
                             </script>
                             <div class="clear"></div>
                         </div>
@@ -252,8 +221,10 @@
                     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mg-bot10">
                         <label class="mg-bot5">Độ tuổi</label>
                         <div>
-                <asp:DropDownList runat="server" class="form-control" id="personkind0" name="[0].personkind" onchange="ChangeChoose();">
+                <asp:DropDownList runat="server" class="form-control" id="drpersonkind" name="[0].personkind" onchange="ChangeChoose();">
                     <asp:ListItem value="0">Người lớn</asp:ListItem>
+                    <asp:ListItem value="1">Trẻ em</asp:ListItem>
+                    <asp:ListItem value="3">Trẻ nhỏ</asp:ListItem>
                 </asp:DropDownList>
                         </div>
                     </div>
@@ -266,15 +237,6 @@
                                 <asp:ListItem value="2">Nước ngoài</asp:ListItem>
 
                             </asp:DropDownList>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mg-bot10">
-                        <label class="mg-bot5">Phòng đơn</label>
-                        <div>
-                        <asp:DropDownList runat="server" class="form-control" id="loaiphuthuphongdon0" name="[0].loaiphuthuphongdon" onchange="ChangeChoose();">
-                            <asp:ListItem Selected="True" value="0">Không</asp:ListItem>
-                        <asp:ListItem value="1">Có</asp:ListItem>
-                        </asp:DropDownList>                        
                         </div>
                     </div>
                 </div>
@@ -308,16 +270,16 @@
         <div class="row">
             <div class="col-xs-12 bor-bot mg-bot20">
                 <div class="radio tienmat">
-                    <label ><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="1" checked="checked" /><label class="lb_r">Tiền mặt</label></label>
+                    <label ><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="1" checked="checked" ID="rbTienmat" /><label class="lb_r">Tiền mặt</label></label>
                 </div>
                 <div class="radio chuyenkhoan">
-                    <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="2" /><label class="lb_r">Chuyển khoản</label></label>
+                    <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="2" ID="rbChuyenkhoan" Height="20px" /><label class="lb_r">Chuyển khoản</label></label>
                 </div>
                 <div class="radio internet">
                     <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="9" /><label class="lb_r">ATM / Internet Banking</label></label>
                 </div>
                 <div class="radio thetindung">
-                    <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="15" /><label class="lb_r">Thẻ tín dụng</label></label>
+                    <label><asp:RadioButtonList runat="server" type="radio" class="chkPayment" name="paymentID" value="15" ID="rbThetindung" /><label class="lb_r">Thẻ tín dụng</label></label>
                     <div class="row cards" id="divCard" style="display:none;">
                         <div class="text">
                             Quý khách vui lòng chọn loại thẻ:
@@ -340,7 +302,7 @@
                     </div>
                 </div>
                 <div class="radio qrcode">
-                    <label><asp:RadioButton runat="server" type="radio" class="chkPayment" name="paymentID" value="16" /><label class="lb_r">Thanh toán bằng quét QRCode</label></label>
+                    <label><asp:RadioButton runat="server" type="radio" class="chkPayment" name="paymentID" value="16" ID="rbQRCode" /><label class="lb_r">Thanh toán bằng quét QRCode</label></label>
                 </div>
             </div>
             <div class="col-xs-12">
@@ -499,7 +461,7 @@
             </div>
         </div>
         <div class="col-xs-12 mg-bot30 text-center">
-                <asp:Button runat="server" type="submit" class="btn btn-md btn-book" Text="Đặt tour"></asp:Button>
+                <asp:Button runat="server" type="submit" class="btn btn-md btn-book" Text="Đặt tour" ID="btnDattour" OnClick="btnDattour_Click"></asp:Button>
         </div>
 </div>   
 </asp:Content>
