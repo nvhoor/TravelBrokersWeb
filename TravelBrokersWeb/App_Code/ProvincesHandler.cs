@@ -36,5 +36,11 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@Name", Name);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
+        public DataTable getListProvince()
+        {
+            SqlCommand cmd = new SqlCommand("select * from Provinces");
+            cmd.CommandType = CommandType.Text;
+            return SQLDB.SQLDB.getData(cmd);
+        }
     }
 }

@@ -31,22 +31,13 @@ namespace TravelBrokersWeb.GUI {
         protected global::System.Web.UI.WebControls.Button btnTimKiem;
         
         /// <summary>
-        /// drnhacungcap control.
+        /// txtMatour control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drnhacungcap;
-        
-        /// <summary>
-        /// txtMaDM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaDM;
+        protected global::System.Web.UI.WebControls.TextBox txtMatour;
         
         /// <summary>
         /// drDMtour control.
@@ -94,22 +85,31 @@ namespace TravelBrokersWeb.GUI {
         protected global::System.Web.UI.WebControls.FileUpload flImage;
         
         /// <summary>
-        /// CheckBox1 control.
+        /// drdsuutien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.DropDownList drdsuutien;
         
         /// <summary>
-        /// CheckBox2 control.
+        /// drdshot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
+        protected global::System.Web.UI.WebControls.DropDownList drdshot;
+        
+        /// <summary>
+        /// txtMota control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMota;
         
         /// <summary>
         /// txtluotxem control.
@@ -139,6 +139,15 @@ namespace TravelBrokersWeb.GUI {
         protected global::System.Web.UI.WebControls.DropDownList drNoiden;
         
         /// <summary>
+        /// datepicker control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datepicker;
+        
+        /// <summary>
         /// txtnguoitao control.
         /// </summary>
         /// <remarks>
@@ -146,6 +155,15 @@ namespace TravelBrokersWeb.GUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnguoitao;
+        
+        /// <summary>
+        /// datepicker2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datepicker2;
         
         /// <summary>
         /// txtsochoconlai control.
@@ -164,6 +182,15 @@ namespace TravelBrokersWeb.GUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnguoisuadoi;
+        
+        /// <summary>
+        /// datepicker3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datepicker3;
         
         /// <summary>
         /// drTrangthai control.
@@ -211,6 +238,24 @@ namespace TravelBrokersWeb.GUI {
         protected global::System.Web.UI.WebControls.TextBox txtkhuyenmai;
         
         /// <summary>
+        /// datepicker4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datepicker4;
+        
+        /// <summary>
+        /// datepicker5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox datepicker5;
+        
+        /// <summary>
         /// txtmalichtrinh control.
         /// </summary>
         /// <remarks>
@@ -220,6 +265,15 @@ namespace TravelBrokersWeb.GUI {
         protected global::System.Web.UI.WebControls.TextBox txtmalichtrinh;
         
         /// <summary>
+        /// TextBox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
         /// drsothutu control.
         /// </summary>
         /// <remarks>
@@ -227,5 +281,41 @@ namespace TravelBrokersWeb.GUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drsothutu;
+        
+        /// <summary>
+        /// btn_Them control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Them;
+        
+        /// <summary>
+        /// btn_Capnhat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Capnhat;
+        
+        /// <summary>
+        /// btn_Xoa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Xoa;
+        
+        /// <summary>
+        /// rpDSTour control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rpDSTour;
     }
 }

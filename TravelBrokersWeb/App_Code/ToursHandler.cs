@@ -42,7 +42,7 @@ namespace TravelBrokersWeb.App_Code
             return SQLDB.SQLDB.getData(cmd);
         }
         public void insertTours(string id, string name, string image, string images, string description, DateTime departureDate,string departureID, int slot,Boolean newFlag,Boolean hotFlag,DateTime createdDate,DateTime updatedDate, string createdBy,string updatedBy,Boolean status,Boolean deleted, string categoryID)
-        { SqlCommand cmd = new SqlCommand("insert into Tours values (@id,@name,@image,@images,@description,@departureDate,@departureID,@slot,@newFlag,@hotFlag,@createdDate,@updatedDate,@createdBy,@updatedBy@status,@deleted,@categoryID)");
+        { SqlCommand cmd = new SqlCommand("insert into Tours values (@id,@name,@image,@images,@description,@departureDate,@departureID,@slot,@newFlag,@hotFlag,@createdDate,@updatedDate,@createdBy,@updatedBy,@status,@deleted,@categoryID)");
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@id", id);
             cmd.Parameters.AddWithValue("@name", name);
@@ -91,6 +91,12 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@deleted", deleted);
             cmd.Parameters.AddWithValue("@categoryID", categoryID);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
+        }
+        public DataTable getListTours()
+        {
+            SqlCommand cmd = new SqlCommand("select id, name, description from Tours");
+            cmd.CommandType = CommandType.Text;
+            return SQLDB.SQLDB.getData(cmd);
         }
     }
 }
