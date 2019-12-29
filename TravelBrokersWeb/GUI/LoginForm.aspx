@@ -28,13 +28,10 @@
    <div class="form-group mb-2 mt-2">
     <label class="text-light mb-1">Tài khoản:</label>
      <asp:TextBox ID="txtUsername" runat="server" type="text" class="form-control bg-dark text-light mb-1" />
-     <asp:RequiredFieldValidator CssClass="valiDangKy text-warning" runat="server" ControlToValidate="txtUsername" Display="Dynamic" ErrorMessage="*"></asp:RequiredFieldValidator>
-     <asp:RegularExpressionValidator runat="server" CssClass="text-warning valiDK" ControlToValidate="txtUsername" ValidationExpression="^([\S\s]{4,20})$" ErrorMessage="Từ 4-20 ký tự" Display="Dynamic"></asp:RegularExpressionValidator>
   </div>
   <div class="form-group mb-2 mt-2">
     <label class="text-light mb-1">Mật khẩu:</label>
     <asp:TextBox ID="txtPass" runat="server" type="password" class="form-control bg-dark text-light mb-1" />
-    <asp:RequiredFieldValidator CssClass="valiDangKy text-warning" runat="server" ControlToValidate="txtPass" Display="Dynamic" ErrorMessage="*"></asp:RequiredFieldValidator>
   </div>
    <div class="form-group form-check">
     <label class="form-check-label text-light mb-3 mt-2">
