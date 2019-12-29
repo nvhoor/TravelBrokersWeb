@@ -9,23 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="icon" href="../images/icon-book-16.png" type="image/png" sizes="16x16" />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">--%>
+   <%-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+   
     <link rel="stylesheet" href="../StyleSheets/reset.min.css" type="text/css" data-noprefix>
     <link rel="stylesheet" type="text/css" href="../StyleSheets/style.css" data-noprefix>
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/prefixfree.min.js"></script>--%>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../StyleSheets/reset.min.css" rel="stylesheet" data-noprefix/>
+    <link href="../StyleSheets/style.css" rel="stylesheet" data-noprefix/>
+    <style type="text/css" media="screen">
+    html,body{
+      height: 100%;
+    }  
+    </style>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <script src="../Scripts/prefixfree.min.js"></script>
-          <%--  --%>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-	    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -66,19 +77,19 @@
           <hr>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Quản lý khách hàng</a>
+              <a class="nav-link" href="QuanLyKhachHangWebForm.aspx">Quản lý khách hàng</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quản lý nhà cung cấp</a>
+              <a class="nav-link" href="QuanLyNhaCungCapWebForm.aspx">Quản lý nhà cung cấp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quản lý tour</a>
+              <a class="nav-link" href="QuanLyTourWebForm.aspx">Quản lý tour</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quản lý danh mục</a>
+              <a class="nav-link" href="QuanLyDanhMucWebForm.aspx">Quản lý danh mục</a>
             </li>
                <li class="nav-item">
-              <a class="nav-link" href="#">Quản lý đơn đặt tour</a>
+              <a class="nav-link" href="QuanLyDonDatTourWebForm.aspx">Quản lý đơn đặt tour</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Báo cáo, thống kê</a>

@@ -49,5 +49,11 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@description", description);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
+        public DataTable getListCategoriesTour()
+        {
+            SqlCommand cmd = new SqlCommand("select * from TourCategories");
+            cmd.CommandType = CommandType.Text;
+            return SQLDB.SQLDB.getData(cmd);
+        }
     }
 }

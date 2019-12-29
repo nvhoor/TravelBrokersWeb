@@ -1,9 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="QuanLyKhachHangWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.QuanLyKhachHangWebForm" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="QuanLyNhaCungCapWebForm.aspx.cs" Inherits="TravelBrokersWeb.GUI.QuanLyNhaCungCapWebForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-
             <div class="col bg-light content">
                 <nav class="navbar navbar-expand-sm bg-light navbar-light">
                     <div class="form-inline m-auto" action="/action_page.php">
@@ -14,27 +12,21 @@
                 <div class="container-fluid row">
                     <div class="col-lg-7 border-right">
                         <div class="w-50 mx-auto">
-                            <div class="form-group" >
-                                <label>Tài khoản</label>
+                            <div class="form-group">
+                                <label>Mã nhà cung cấp</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Mật khẩu</label>
+                                <label>Mã cấp phép</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Họ và tên</label>
+                                <label>Tên nhà cung cấp</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                            <div class="form-group mb-2 mt-2">
-                                <label class="mb-1">Ngày sinh</label>
-                                <input id="datepicker" class="form-control bg-light text-light"
-                                    placeholder="Chọn ngày sinh" />
-                                <script>
-                                    $('#datepicker').datepicker({
-                                        uiLibrary: 'bootstrap4'
-                                    });
-                                </script>
+                            <div class="form-group">
+                                <label>Địa chỉ</label>
+                                <input type="text" class="form-control" placeholder="">
                             </div>
 
                             <div class="form-group">
@@ -45,13 +37,9 @@
                                 <label>Email</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-
                             <div class="form-group">
-                                <label for="exampleFormControlSelect2">Trạng thái</label>
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                    <option selected="true">Kích hoạt</option>
-                                    <option>Vô hiệu</option>
-                                </select>
+                                <label>Fax</label>
+                                <input type="text" class="form-control" placeholder="">
                             </div>
                         </div>
 
@@ -90,34 +78,36 @@
                         <table class="table table-striped table-bordered table-hover text-center tb-giohang">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th scope="col">Tài khoản</th>
-                                    <th scope="col">Họ và tên</th>
-                                    <th scope="col">Ngày sinh</th>
+                                    <th scope="col">Mã nhà cung cấp</th>
+                                    <th scope="col">Mã cấp phép</th>
+                                    <th scope="col">Tên nhà cung cấp</th>
+                                    <th scope="col">Địa chỉ</th>
                                     <th scope="col">Số điện thoại</th>
                                     <th scope="col">Email</th>
-                                    <th scope="col">Trạng thái</th>
+                                    <th scope="col">Fax</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>KH01</td>
-                                    <td><a href="*">Nguyen Van A</a></td>
-                                    <td>23/4/1997</td>
+                                    <td>NCC01</td>
+                                    <td>abcxyz</td>
+                                    <td><a href="*">Cty CP-DV Du lich Viet</a></td>
+                                    <td>Hai Chau - Da Nang</td>
                                     <td>0396617175</td>
                                     <td>khachhang01@gmail.com</td>
-                                    <td><a href="#">Kích hoạt</a></td>
+                                    <td>19008168</td>
                                 </tr>
                                 <tr>
-                                        <td>KH02</td>
-                                        <td><a href="*">Nguyen Van B</a></td>
-                                        <td>23/4/1997</td>
-                                        <td>0396617175</td>
-                                        <td>khachhang01@gmail.com</td>
-                                        <td><a href="#">Kích hoạt</a></td>
-                                    </tr>
+                                    <td>NCC01</td>
+                                    <td>abcxyz</td>
+                                    <td><a href="*">Cty CP-DV Du lich Viet</a></td>
+                                    <td>Hai Chau - Da Nang</td>
+                                    <td>0396617175</td>
+                                    <td>khachhang01@gmail.com</td>
+                                    <td>19008168</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </div>
 </asp:Content>

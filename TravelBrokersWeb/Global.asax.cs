@@ -13,10 +13,10 @@ namespace TravelBrokersWeb
     {
         void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
+// on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            SQLDB.SQLDB.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectNhi"].ConnectionString;
+            SQLDB.SQLDB.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectPhuc"].ConnectionString;
         }
     }
 }

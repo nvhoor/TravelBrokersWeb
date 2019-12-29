@@ -120,13 +120,16 @@
     <Content Include="GUI\HomeMasterPage.Master" />
     <Content Include="GUI\AdminMasterPage.Master" />
     <Content Include="GUI\DefaultMasterPage.Master" />
+    <Content Include="GUI\QuanLyDonDatTourWebForm.aspx" />
     <Content Include="images\BookShop.webarchive" />
     <Content Include="images\carousel-slider.slider.standard.zip" />
     <Content Include="images\Thumbs.db" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="GUI\HomeUser.aspx" />
     <Content Include="GUI\HomeWebForm.aspx" />
+    <Content Include="GUI\QuanLyDanhMucWebForm.aspx" />
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
+    <Content Include="GUI\QuanLyNhaCungCapWebForm.aspx" />
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
     <Content Include="GUI\DatTourWebForm.aspx" />
@@ -301,12 +304,33 @@
     <Compile Include="GUI\HomeWebForm.aspx.designer.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuanLyDanhMucWebForm.aspx.cs">
+      <DependentUpon>QuanLyDanhMucWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyDanhMucWebForm.aspx.designer.cs">
+      <DependentUpon>QuanLyDanhMucWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyDonDatTourWebForm.aspx.cs">
+      <DependentUpon>QuanLyDonDatTourWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyDonDatTourWebForm.aspx.designer.cs">
+      <DependentUpon>QuanLyDonDatTourWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.cs">
       <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.designer.cs">
       <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyNhaCungCapWebForm.aspx.cs">
+      <DependentUpon>QuanLyNhaCungCapWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyNhaCungCapWebForm.aspx.designer.cs">
+      <DependentUpon>QuanLyNhaCungCapWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLyTourWebForm.aspx.cs">
       <DependentUpon>QuanLyTourWebForm.aspx</DependentUpon>
