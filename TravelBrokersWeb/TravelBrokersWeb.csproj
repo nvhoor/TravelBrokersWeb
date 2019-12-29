@@ -312,6 +312,7 @@
     </Compile>
     <Compile Include="GUI\LoginForm.aspx.designer.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLyDanhMucWebForm.aspx.cs">
       <DependentUpon>QuanLyDanhMucWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

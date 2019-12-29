@@ -13,5 +13,12 @@ namespace TravelBrokersWeb
         {
 
         }
+
+        protected void dangxuat_ServerClick(object sender, EventArgs e)
+        {
+            Session.Remove("login-admin");
+            Response.Redirect("LoginForm.aspx");
+        
+        }
     }
 }

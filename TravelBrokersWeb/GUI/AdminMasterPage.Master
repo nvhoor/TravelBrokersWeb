@@ -65,7 +65,7 @@
         </ul>
       </div>
       <a class="taikhoan" id="lnkTenAdmin" runat="server"> </a>
-      <button id="dangxuat" type="button" class="btn btn-outline-warning" runat="server" style="margin: 0 10px;">Đăng xuất</button>
+      <button id="dangxuat" type="button" class="btn btn-outline-warning" runat="server" style="margin: 0 10px;" onserverclick="dangxuat_ServerClick">Đăng xuất</button>
       
     </nav>
     <section class="container-fluid " id="noidung">

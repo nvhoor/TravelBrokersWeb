@@ -7,21 +7,21 @@
                       <div class="col-lg-3 mt-2 mb-2">
                   <div class="card">
                     <div>
-                      <div id="count" class="badge badge-pill badge-info coundown-date"></div>
+                      <div id="<%#:Eval("timeID")%>" class="badge badge-pill badge-info coundown-date"></div>
                       <script>
-                      var countDownDate = new Date("<%#:Eval("departureDate","{0:d}")%>").getTime();
+                          var countDownDate<%#:Eval("timeID")%> = new Date("<%#:Eval("departureDate","{0:d}")%>").getTime();
                       var x = setInterval(function() {
                         var now = new Date().getTime();
-                        var distance = countDownDate - now;
+                        var distance = countDownDate<%#:Eval("timeID")%> - now;
                         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
                         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                        document.getElementById("count").innerHTML = days + " days " + hours + "h "
+                        document.getElementById("<%#:Eval("timeID") %>").innerHTML = days + " days " + hours + "h "
                         + minutes + "m " + seconds + "s ";
                         if (distance < 0) {
                           clearInterval(x);
-                          document.getElementById("count").innerHTML = "Hết hạn";
+                          document.getElementById("<%#:Eval("timeID") %>").innerHTML = "Hết hạn";
                         }
                       }, 1000);
                       </script>

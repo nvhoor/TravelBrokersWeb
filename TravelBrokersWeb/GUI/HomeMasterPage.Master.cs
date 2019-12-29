@@ -51,6 +51,7 @@ namespace TravelBrokersWeb.GUI
 
         protected void dangxuat_ServerClick(object sender, EventArgs e)
         {
+            Session.Remove("login-user");
             Response.Redirect("LoginForm.aspx");
         }
     }
