@@ -249,6 +249,7 @@
     <Compile Include="App_Code\PostCategoriesHandler.cs" />
     <Compile Include="App_Code\PostsHandler.cs" />
     <Compile Include="GUI\AdminMasterPage.Master.cs">
+    <Compile Include="GUI\TienIch.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
