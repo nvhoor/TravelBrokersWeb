@@ -23,22 +23,21 @@ namespace TravelBrokersWeb.GUI
 
         protected void btnDattour_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 string IDBK = "TB" + DateTime.UtcNow.ToString("yyyMMddHHmmssfff", CultureInfo.InvariantCulture);
-                bkhd.insertTourBookings(IDBK, txtcontact_name.Text.Trim(), txtemail.Text.Trim(), txtmobilephone.Text.Trim(),txtaddress.Text.Trim(),txtNote.InnerText.Trim(), "utthao", "TR01", 1,false);
+                bkhd.insertTourBookings(IDBK, txtcontact_name.Text.Trim(), txtemail.Text.Trim(), txtmobilephone.Text.Trim(), txtaddress.Text.Trim(), txtNote.InnerText.Trim(), "utthao", "TR01", 1, false);
 
                 string IDBKDT = "TBD" + DateTime.UtcNow.ToString("yyyMMddHHmmssfff", CultureInfo.InvariantCulture);
                 tbkd.insertTourBookingDetails(IDBKDT, "TR01", IDBK);
-
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Đặt tour thành công');", true);
+            }
+            catch
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Đặt tour không thành công');", true);
+            }  
 
-            //}
-            //catch
-            //{
 
-            //    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Đặt tour không thành công');", true);
-            //}
-        }
+}
     }
 }
