@@ -18,19 +18,31 @@ namespace TravelBrokersWeb.App_Code
         }
         public DataTable getTopTourHotest()
         {
+<<<<<<< HEAD
             SqlCommand cmd = new SqlCommand("select top 8 a.*,DATEDIFF(day, GETDATE(), departureDate) AS numDays,originalPrice,promotionPrice from Tours a, Prices b where hotFlag=1 and a.id=b.tourID and b.touristTypeID='TT01' and DATEDIFF(day, GETDATE(), departureDate)>0");
+=======
+            SqlCommand cmd = new SqlCommand("select top 8 a.*,DATEDIFF(day, GETDATE(), departureDate) AS numDays,originalPrice,promotionPrice from Tours a, Prices b where hotFlag=1 and a.id=b.tourID and b.touristTypeID='TT01'");
+>>>>>>> ho
             cmd.CommandType = CommandType.Text;
             return SQLDB.SQLDB.getData(cmd);
         }
         public DataTable getTopTourNewest()
         {
+<<<<<<< HEAD
             SqlCommand cmd = new SqlCommand("select top 8 a.*,DATEDIFF(day, GETDATE(), departureDate) AS numDays,originalPrice,promotionPrice from Tours a, Prices b where hotFlag=1 and a.id=b.tourID and b.touristTypeID='TT01' and DATEDIFF(day, GETDATE(), departureDate)>0 order by createdDate desc");
+=======
+            SqlCommand cmd = new SqlCommand("select top 8 a.*,DATEDIFF(day, GETDATE(), departureDate) AS numDays,originalPrice,promotionPrice from Tours a, Prices b where newFlag=1 and a.id=b.tourID and b.touristTypeID='TT01' order by createdDate desc");
+>>>>>>> ho
             cmd.CommandType = CommandType.Text;
             return SQLDB.SQLDB.getData(cmd);
         }
         public DataTable getListTourByCateID(string cateID)
         {
+<<<<<<< HEAD
             SqlCommand cmd = new SqlCommand("select a.*,DATEDIFF(day, GETDATE(), departureDate) AS numDays,originalPrice,promotionPrice from Tours a, Prices b where a.id=b.tourID and b.touristTypeID='TT01' and DATEDIFF(day, GETDATE(), departureDate)>0 and categoryID=@categoryID order by createdDate desc");
+=======
+            SqlCommand cmd = new SqlCommand("select a.*,DATEDIFF(day, GETDATE(), departureDate) AS numDays,originalPrice,promotionPrice from Tours a, Prices b where a.id=b.tourID and b.touristTypeID='TT01' and categoryID=@categoryID order by createdDate desc");
+>>>>>>> ho
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@categoryID", cateID);
             return SQLDB.SQLDB.getData(cmd);
