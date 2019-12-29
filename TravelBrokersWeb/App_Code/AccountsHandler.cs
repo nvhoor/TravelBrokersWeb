@@ -56,5 +56,28 @@ namespace TravelBrokersWeb.App_Code
             cmd.Parameters.AddWithValue("@deleted", deleted);
             SQLDB.SQLDB.ExcuteNonQuery(cmd);
         }
+        public DataTable CheckLogin(string username, string password)
+        {
+            SqlCommand cmd = new SqlCommand("select * from Accounts where username=@username and password=@password ");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
+            return SQLDB.SQLDB.getData(cmd);
+        }
+        public bool IsAdmin(string username)
+        {
+            SqlCommand cmd = new SqlCommand("select * from Accounts where username=@username and roleId='RO01'");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@username", username);
+            return (SQLDB.SQLDB.getData(cmd).Rows.Count > 0) ? true : false;
+        }
+        public DataTable TimTaiKhoan(string username)
+        {
+            SqlCommand cmd = new SqlCommand("select * from Accounts where username = @username");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@username", username);
+
+            return SQLDB.SQLDB.getData(cmd);
+        }
     }
 }

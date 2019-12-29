@@ -24,7 +24,17 @@ namespace TravelBrokersWeb.GUI
                     rpDSDM2.DataSource = dt2;
                     rpDSDM2.DataBind();
                 }
-               
+                if (Session["login-user"] != null)
+                {
+                    dangky.Visible = dangnhap.Visible = false;
+                    dangxuat.Visible = lnkTenAdmin.Visible = true;
+
+                    lnkTenAdmin.InnerText = new AccountsHandler().TimTaiKhoan(Session["login-user"].ToString()).Rows[0]["username"].ToString();
+                }
+                else
+                {
+                    dangxuat.Visible = lnkTenAdmin.Visible = false;
+                }
             }
         }
 
@@ -32,6 +42,16 @@ namespace TravelBrokersWeb.GUI
         {
             Session["id"] = e.CommandArgument.ToString();
             Response.Redirect("DanhSachSPTheoDanhMucWebForm.aspx");
+        }
+
+        protected void dangnhap_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginForm.aspx");
+        }
+
+        protected void dangxuat_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginForm.aspx");
         }
     }
 }

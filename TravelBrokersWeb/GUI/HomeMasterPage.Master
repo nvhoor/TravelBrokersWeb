@@ -44,8 +44,10 @@
             </li>
         </ul>
       </div>
-      <button id="dangnhap" type="button" class="btn btn-outline-primary" style="margin: 0 10px;">Đăng nhập</button>
-      <button id="dangky" type="button" class="btn btn-outline-success" style="margin: 0 10px;">Đăng ký</button>
+      <button id="dangnhap" type="button" class="btn btn-outline-primary" runat="server" onserverclick="dangnhap_ServerClick" style="margin: 0 10px;">Đăng nhập</button>
+      <button id="dangky" type="button" class="btn btn-outline-success" runat="server" style="margin: 0 10px;">Đăng ký</button>
+      <a class="taikhoan" id="lnkTenAdmin" runat="server" ></a>
+      <button id="dangxuat" type="button" class="btn btn-outline-warning" runat="server" onserverclick="dangxuat_ServerClick" style="margin: 0 10px;">Đăng xuất</button>
     </nav>
     <section id="slide">
         <div id="carouselExampleControls" class="carousel slide slide-banner" data-ride="carousel">
