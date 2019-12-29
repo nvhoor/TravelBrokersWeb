@@ -10,171 +10,159 @@
 namespace TravelBrokersWeb.GUI {
     
     
-    public partial class WebForm1 {
+    public partial class DatTourWebForm {
         
         /// <summary>
-        /// contact_name control.
+        /// txtcontact_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contact_name;
+        protected global::System.Web.UI.WebControls.TextBox txtcontact_name;
         
         /// <summary>
-        /// mobilephone control.
+        /// txtmobilephone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mobilephone;
+        protected global::System.Web.UI.WebControls.TextBox txtmobilephone;
         
         /// <summary>
-        /// address control.
+        /// txtaddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox address;
+        protected global::System.Web.UI.WebControls.TextBox txtaddress;
         
         /// <summary>
-        /// email control.
+        /// txtemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email;
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
         
         /// <summary>
-        /// phone control.
+        /// txtphone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phone;
+        protected global::System.Web.UI.WebControls.TextBox txtphone;
         
         /// <summary>
-        /// adult control.
+        /// txtguests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adult;
+        protected global::System.Web.UI.WebControls.TextBox txtguests;
         
         /// <summary>
-        /// children11 control.
+        /// txtNote control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox children11;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtNote;
         
         /// <summary>
-        /// children control.
+        /// txtName1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox children;
+        protected global::System.Web.UI.WebControls.TextBox txtName1;
         
         /// <summary>
-        /// small_children control.
+        /// drGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox small_children;
+        protected global::System.Web.UI.WebControls.DropDownList drGender;
         
         /// <summary>
-        /// guests control.
+        /// drpersonkind control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox guests;
-        
-        /// <summary>
-        /// dob0_day control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dob0_day;
-        
-        /// <summary>
-        /// dob0_month control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dob0_month;
-        
-        /// <summary>
-        /// dob0_year control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dob0_year;
-        
-        /// <summary>
-        /// personkind0 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList personkind0;
+        protected global::System.Web.UI.WebControls.DropDownList drpersonkind;
         
         /// <summary>
         /// loaikhachnoidia0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList loaikhachnoidia0;
         
         /// <summary>
-        /// loaiphuthuphongdon0 control.
+        /// rbTienmat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList loaiphuthuphongdon0;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbTienmat;
+        
+        /// <summary>
+        /// rbChuyenkhoan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbChuyenkhoan;
+        
+        /// <summary>
+        /// rbThetindung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbThetindung;
+        
+        /// <summary>
+        /// rbQRCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQRCode;
         
         /// <summary>
         /// chkDieuKhoan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
-        /// To modify, move the field declaration from the designer file to a code-behind file.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkDieuKhoan;
         
         /// <summary>
-        /// Master property.
+        /// btnDattour control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated property.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        public new TravelBrokersWeb.GUI.DefaultMasterPage Master {
-            get {
-                return ((TravelBrokersWeb.GUI.DefaultMasterPage)(base.Master));
-            }
-        }
+        protected global::System.Web.UI.WebControls.Button btnDattour;
     }
 }
