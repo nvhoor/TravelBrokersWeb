@@ -120,6 +120,7 @@
     <Content Include="GUI\HomeMasterPage.Master" />
     <Content Include="GUI\AdminMasterPage.Master" />
     <Content Include="GUI\DefaultMasterPage.Master" />
+    <Content Include="GUI\LoginForm.aspx" />
     <Content Include="images\BookShop.webarchive" />
     <Content Include="images\carousel-slider.slider.standard.zip" />
     <Content Include="images\Thumbs.db" />
@@ -300,6 +301,13 @@
     </Compile>
     <Compile Include="GUI\HomeWebForm.aspx.designer.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.cs">
       <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>

@@ -16,7 +16,11 @@ namespace TravelBrokersWeb
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+<<<<<<< HEAD
+            SQLDB.SQLDB.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectNhi"].ConnectionString;
+=======
             SQLDB.SQLDB.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectThao"].ConnectionString;
+>>>>>>> utthao
         }
     }
 }

@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TravelBrokersWeb</RootNamespace>
     <AssemblyName>TravelBrokersWeb</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -28,7 +28,7 @@
     <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>false</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
@@ -54,9 +54,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -115,37 +115,74 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="GUI\DanhSachSPTheoDanhMucWebForm.aspx" />
     <Content Include="GUI\DanhSachSPWebUserControl.ascx" />
     <Content Include="GUI\HomeMasterPage.Master" />
     <Content Include="GUI\AdminMasterPage.Master" />
     <Content Include="GUI\DefaultMasterPage.Master" />
+    <Content Include="GUI\LoginForm.aspx" />
+    <Content Include="images\BookShop.webarchive" />
+    <Content Include="images\carousel-slider.slider.standard.zip" />
+    <Content Include="images\Thumbs.db" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="GUI\HomeUser.aspx" />
     <Content Include="GUI\HomeWebForm.aspx" />
     <Content Include="GUI\QuanLyKhachHangWebForm.aspx" />
     <Content Include="GUI\QuanLyTourWebForm.aspx" />
     <Content Include="GUI\ThongTinTourWebForm.aspx" />
-<<<<<<< HEAD
     <Content Include="GUI\DatTourWebForm.aspx" />
-=======
-    <Content Include="GUI\Login.aspx" />
->>>>>>> 8cf75d53ac06be61ec3f1c2786f238274d679bce
+    <Content Include="images\4.png" />
+    <Content Include="images\ando.png" />
+    <Content Include="images\arrow.png" />
     <Content Include="images\background.jpg" />
+    <Content Include="images\batdongsan.png" />
     <Content Include="images\beach-icon.png" />
+    <Content Include="images\bg-app.png" />
+    <Content Include="images\daoPQ.png" />
+    <Content Include="images\dd1.jpg" />
+    <Content Include="images\dd2.jpg" />
+    <Content Include="images\dd3.jpg" />
+    <Content Include="images\dd4.jpg" />
+    <Content Include="images\dontet.png" />
+    <Content Include="images\doremon.jpg" />
+    <Content Include="images\doremon.png" />
     <Content Include="images\facebook-logo.png" />
     <Content Include="images\find-beach-icon.png" />
     <Content Include="images\flight.jpg" />
     <Content Include="images\flight2.png" />
+    <Content Include="images\fukushima.png" />
+    <Content Include="images\giangsinh.png" />
+    <Content Include="images\hoaanhdao.png" />
+    <Content Include="images\i-chair.png" />
+    <Content Include="images\i-clock.png" />
+    <Content Include="images\i-code.png" />
+    <Content Include="images\i-date.png" />
+    <Content Include="images\i-price.png" />
     <Content Include="images\instagram-logo.png" />
     <Content Include="images\island.png" />
+    <Content Include="images\mientrung.png" />
+    <Content Include="images\nonnuocmienBac.png" />
     <Content Include="images\proposal-flight.png" />
+    <Content Include="images\qg1.jpg" />
+    <Content Include="images\qg2.jpg" />
+    <Content Include="images\qg3.jpg" />
+    <Content Include="images\qg4.jpg" />
+    <Content Include="images\qg5.jpg" />
     <Content Include="images\search.png" />
     <Content Include="images\slide-1.jpg" />
     <Content Include="images\slide-2.jpg" />
     <Content Include="images\slide-3.jpg" />
     <Content Include="images\slide-4.jpg" />
-    <Content Include="images\slide-4.png" />
     <Content Include="images\star.png" />
+    <Content Include="images\tet.png" />
+    <Content Include="images\thonhiky.png" />
+    <Content Include="images\tour-1.png" />
+    <Content Include="images\tour-2.jpg" />
+    <Content Include="images\tour-3.jpg" />
+    <Content Include="images\tour-4.jpg" />
+    <Content Include="images\tour-5.jpg" />
+    <Content Include="images\tour-6.jpg" />
+    <Content Include="images\tour-7.png" />
     <Content Include="images\twitter-logo.png" />
     <Content Include="images\youtube-logo.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -196,6 +233,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="App_Code\TourBookingDetails.cs" />
+=======
+    <Compile Include="App_Code\TienIch.cs" />
+>>>>>>> utthao
+    <Compile Include="App_Code\ToursHandler.cs" />
+    <Compile Include="App_Code\TourCategoriesHandler.cs" />
+    <Compile Include="App_Code\TouristTypeHandler.cs" />
+    <Compile Include="App_Code\PricesHandler.cs" />
+    <Compile Include="App_Code\ProvincesHandler.cs" />
+    <Compile Include="App_Code\TourProgramsHandler.cs" />
+    <Compile Include="App_Code\AccountsHandler.cs" />
+    <Compile Include="App_Code\TourBookingsHandler.cs" />
+    <Compile Include="App_Code\TourCustomersHandler.cs" />
+    <Compile Include="App_Code\TouristsHandler.cs" />
+    <Compile Include="App_Code\TourSuppliersHandler.cs" />
+    <Compile Include="App_Code\EvaluationsHandler.cs" />
+    <Compile Include="App_Code\PostCategoriesHandler.cs" />
+    <Compile Include="App_Code\PostsHandler.cs" />
     <Compile Include="GUI\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -207,6 +263,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhSachSPTheoDanhMucWebForm.aspx.cs">
+      <DependentUpon>DanhSachSPTheoDanhMucWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhSachSPTheoDanhMucWebForm.aspx.designer.cs">
+      <DependentUpon>DanhSachSPTheoDanhMucWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\DanhSachSPWebUserControl.ascx.cs">
       <DependentUpon>DanhSachSPWebUserControl.ascx</DependentUpon>
@@ -243,6 +306,13 @@
     <Compile Include="GUI\HomeWebForm.aspx.designer.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLyKhachHangWebForm.aspx.cs">
       <DependentUpon>QuanLyKhachHangWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,21 +334,12 @@
     <Compile Include="GUI\ThongTinTourWebForm.aspx.designer.cs">
       <DependentUpon>ThongTinTourWebForm.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="GUI\DatTourWebForm.aspx.cs">
       <DependentUpon>DatTourWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GUI\DatTourWebForm.aspx.designer.cs">
       <DependentUpon>DatTourWebForm.aspx</DependentUpon>
-=======
-    <Compile Include="GUI\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
->>>>>>> 8cf75d53ac06be61ec3f1c2786f238274d679bce
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
