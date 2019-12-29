@@ -27,7 +27,7 @@
     </header>
     <hr>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top mr-auto">
-      <a class="navbar-brand" href="javascript:void(0)">TRANG CHỦ</a>
+      <a class="navbar-brand" href="HomeUser.aspx">TRANG CHỦ</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -179,7 +179,7 @@
                     <ItemTemplate>
                           <div class="col-md-2">
                               <div class="card mb-2">
-                                <img class="card-img-top" src="../images/proposal-flight.png"
+                                <img class="card-img-top" src="../images/<%#:Eval("image") %>"
                                   alt="Card image cap">
                                 <div class="card-body">
                                 <asp:LinkButton class="card-title stretched-link" runat="server" ID="lnkDM1" CommandName="dm" CommandArgument='<%#:Eval("id") %>' Text='<%#:Eval("name") %>'></asp:LinkButton>

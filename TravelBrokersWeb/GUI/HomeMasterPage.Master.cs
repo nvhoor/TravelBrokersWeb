@@ -18,7 +18,7 @@ namespace TravelBrokersWeb.GUI
             {
                 rpDSDM1.DataSource = tourCategoriesHandler.getListCategories(1, 6);
                 rpDSDM1.DataBind();
-                DataTable dt2= tourCategoriesHandler.getListCategories(6, 12);
+                DataTable dt2= tourCategoriesHandler.getListCategories(7, 12);
                 if (dt2.Rows.Count > 0)
                 {
                     rpDSDM2.DataSource = dt2;
